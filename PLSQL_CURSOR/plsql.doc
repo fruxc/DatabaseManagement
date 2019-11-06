@@ -1,0 +1,446 @@
+SQL> set serveroutput ON;
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 13  /
+SHIVANI 1000                                                                    
+
+PL/SQL procedure successfully completed.
+
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+  2  cursor c1 is select CNAME cn, AMOUNT am from deposit_02 where BNAME = 'VIRAR';
+  3  z c1%rowtype;
+  4  BEGIN
+  5  open c1;
+  6  fetch c1 into z;
+  7  while(c1%found)loop
+  8      dbms_output.put_line(z.cn ||' '||z.am);
+  9      fetch c1 into z;
+ 10  end loop;
+ 11  close c1;
+ 12  end;
+ 13  /
+SHIVANI 1000                                                                    
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_2.sql
+ 14  /
+Enter value for city: VIRAR
+old   5: city:=&city;
+new   5: city:=VIRAR;
+city:=VIRAR;
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00201: identifier 'CITY' must be declared 
+ORA-06550: line 5, column 1: 
+PL/SQL: Statement ignored 
+ORA-06550: line 6, column 1: 
+PLS-00306: wrong number or types of arguments in call to 'C1' 
+ORA-06550: line 6, column 1: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> 
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_2.sql
+ 15  /
+Enter value for city: VIRAR
+old   6: city:=&city;
+new   6: city:=VIRAR;
+cursor c1(city) is select CNAME cn, AMOUNT am from deposit_02 where BNAME = city;
+              *
+ERROR at line 3:
+ORA-06550: line 3, column 15: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+in out <an identifier> <a double-quoted delimited-identifier> 
+... LONG_ double ref char time timestamp interval date binary 
+national character nchar 
+The symbol "<an identifier>" was substituted for ")" to continue. 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_2.sql
+ 14  /
+Enter value for city: VIRAR
+old   5: city:=&city;
+new   5: city:=VIRAR;
+city:=VIRAR;
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00201: identifier 'CITY' must be declared 
+ORA-06550: line 5, column 1: 
+PL/SQL: Statement ignored 
+ORA-06550: line 6, column 9: 
+PLS-00201: identifier 'CITY' must be declared 
+ORA-06550: line 6, column 1: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_2.sql
+ 13  /
+SHIVANI 1000                                                                    
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_3.sql
+ 15  /
+    count:=count+1;
+           *
+ERROR at line 9:
+ORA-06550: line 9, column 12: 
+PLS-00204: function or pseudo-column 'COUNT' may be used inside a SQL statement 
+only 
+ORA-06550: line 9, column 5: 
+PL/SQL: Statement ignored 
+ORA-06550: line 12, column 34: 
+PLS-00204: function or pseudo-column 'COUNT' may be used inside a SQL statement 
+only 
+ORA-06550: line 12, column 1: 
+PL/SQL: Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_3.sql
+ 15  /
+Count =                                                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_3.sql
+ 16  /
+Count = 10                                                                      
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from customer_02;
+
+CNAME                CITY                                                       
+-------------------- --------------------                                       
+ANIL                 KOLKATA                                                    
+SUNIL                DELHI                                                      
+MEHUL                BARODA                                                     
+MANDAR               PATNA                                                      
+MADHURI              NAGPUR                                                     
+PRAMOD               NAGPUR                                                     
+SANDIP               SURAT                                                      
+SHIVANI              MUMBAI                                                     
+KRANTI               MUMBAI                                                     
+NAREN                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+  2  cursor c1 is select * from customer_02;
+  3  z c1%rowtype;
+  4  counter number;
+  5  BEGIN
+  6  counter := 0;
+  7  open c1;
+  8  fetch c1 into z;
+  9  while(c1%found)loop
+ 10      counter:=counter+1;
+ 11      fetch c1 into z;
+ 12  end loop;
+ 13  dbms_output.put_line('Count = '||counter);
+ 14  close c1;
+ 15  end;
+ 16  /
+Count = 10                                                                      
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_4.sql
+ 16  /
+for z in 1..c1 loop
+            *
+ERROR at line 9:
+ORA-06550: line 9, column 13: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 9, column 1: 
+PL/SQL: Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_3.sql
+ 16  /
+Count = 10                                                                      
+
+PL/SQL procedure successfully completed.
+
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+  2  cursor c1 is select * from customer_02;
+  3  z c1%rowtype;
+  4  counter number;
+  5  BEGIN
+  6  counter := 0;
+  7  open c1;
+  8  fetch c1 into z;
+  9  while(c1%found)loop
+ 10      counter:=counter+1;
+ 11      fetch c1 into z;
+ 12  end loop;
+ 13  dbms_output.put_line('Count = '||counter);
+ 14  close c1;
+ 15  end;
+ 16  /
+Count = 10                                                                      
+
+PL/SQL procedure successfully completed.
+
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+  2  cursor c1 is select * from customer_02;
+  3  z c1%rowtype;
+  4  counter number;
+  5  BEGIN
+  6  counter := 0;
+  7  open c1;
+  8  fetch c1 into z;
+  9  loop
+ 10      counter:=counter+1;
+ 11      fetch c1 into z;
+ 12      EXIT WHEN c1%NOTFOUND;
+ 13  end loop;
+ 14  dbms_output.put_line('Count = '||counter);
+ 15  close c1;
+ 16  end;
+ 17  /
+Count = 10                                                                      
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_6.sql
+ 16  /
+countamount := 0;
+*
+ERROR at line 6:
+ORA-06550: line 6, column 1: 
+PLS-00201: identifier 'COUNTAMOUNT' must be declared 
+ORA-06550: line 6, column 1: 
+PL/SQL: Statement ignored 
+ORA-06550: line 10, column 5: 
+PLS-00201: identifier 'COUNTAMOUNT' must be declared 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+ORA-06550: line 13, column 34: 
+PLS-00201: identifier 'COUNTAMOUNT' must be declared 
+ORA-06550: line 13, column 1: 
+PL/SQL: Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_6.sql
+ 16  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06511: PL/SQL: cursor already open 
+ORA-06512: at line 2 
+ORA-06512: at line 9 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_6.sql
+ 16  /
+Total Amount = 28700                                                            
+
+PL/SQL procedure successfully completed.
+
+SQL> select sum(amount) from deposit_02;
+
+SUM(AMOUNT)                                                                     
+-----------                                                                     
+      28700                                                                     
+
+SQL> select cname from deposit_02 order by amount asc;
+
+CNAME                                                                           
+------------------                                                              
+ANIL                                                                            
+SHIVANI                                                                         
+MADHURI                                                                         
+SANDIP                                                                          
+PRAMOD                                                                          
+MEHUL                                                                           
+SUNIL                                                                           
+KRANTI                                                                          
+NAREN                                                                           
+
+9 rows selected.
+
+SQL> select cname,amount from deposit_02 order by amount asc;
+
+CNAME                  AMOUNT                                                   
+------------------ ----------                                                   
+ANIL                     1000                                                   
+SHIVANI                  1000                                                   
+MADHURI                  1200                                                   
+SANDIP                   2000                                                   
+PRAMOD                   3000                                                   
+MEHUL                    3500                                                   
+SUNIL                    5000                                                   
+KRANTI                   5000                                                   
+NAREN                    7000                                                   
+
+9 rows selected.
+
+SQL> select cname,amount from deposit_02 order by amount desc;
+
+CNAME                  AMOUNT                                                   
+------------------ ----------                                                   
+NAREN                    7000                                                   
+KRANTI                   5000                                                   
+SUNIL                    5000                                                   
+MEHUL                    3500                                                   
+PRAMOD                   3000                                                   
+SANDIP                   2000                                                   
+MADHURI                  1200                                                   
+SHIVANI                  1000                                                   
+ANIL                     1000                                                   
+
+9 rows selected.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_7.sql
+ 15  /
+z c1%rowcount;
+     *
+ERROR at line 3:
+ORA-06550: line 3, column 6: 
+PLS-00208: identifier 'ROWCOUNT' is not a legal cursor attribute 
+ORA-06550: line 3, column 3: 
+PL/SQL: Item ignored 
+ORA-06550: line 8, column 15: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 8, column 1: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 10, column 26: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+ORA-06550: line 11, column 19: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 11, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_7.sql
+ 15  /
+z c1%ROWCOUNT;
+     *
+ERROR at line 3:
+ORA-06550: line 3, column 6: 
+PLS-00208: identifier 'ROWCOUNT' is not a legal cursor attribute 
+ORA-06550: line 3, column 3: 
+PL/SQL: Item ignored 
+ORA-06550: line 8, column 15: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 8, column 1: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 10, column 26: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 10, column 5: 
+PL/SQL: Statement ignored 
+ORA-06550: line 11, column 19: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 11, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+  2  cursor c1 is select * from customer_02;
+  3  z c1%rowtype;
+  4  counter number;
+  5  BEGIN
+  6  counter := 0;
+  7  open c1;
+  8  fetch c1 into z;
+  9  for z in c1 loop
+ 10      counter:=counter+1;
+ 11      fetch c1 into z;
+ 12  end loop;
+ 13  dbms_output.put_line('Count = '||counter);
+ 14  close c1;
+ 15  end;
+ 16  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06511: PL/SQL: cursor already open 
+ORA-06512: at line 2 
+ORA-06512: at line 9 
+
+
+SQL> clear screen
+SQL> spool off
+SQL> @ e:\hammaddbms\plsql_cursor\cursor_6.sql
+Total Amount = 1000                                                             
+
+PL/SQL procedure successfully completed.
+
+SQL> select 8 from deposit_02;
+
+         8                                                                      
+----------                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+
+9 rows selected.
+
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> @ e:\hammaddbms\plsql_cursor\cursor_7.sql
+MEHUL                                                                           
+
+PL/SQL procedure successfully completed.
+
+SQL> select distinct amount,cname nm from deposit_02 order by amount desc;
+
+    AMOUNT NM                                                                   
+---------- ------------------                                                   
+      7000 NAREN                                                                
+      5000 KRANTI                                                               
+      5000 SUNIL                                                                
+      3500 MEHUL                                                                
+      3000 PRAMOD                                                               
+      2000 SANDIP                                                               
+      1200 MADHURI                                                              
+      1000 ANIL                                                                 
+      1000 SHIVANI                                                              
+
+9 rows selected.
+
+SQL> select cname nm, amount from deposit_02 order by amount desc group by amount;
+select cname nm, amount from deposit_02 order by amount desc group by amount
+                                                             *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SPOOL OFF

@@ -1,0 +1,1117 @@
+SQL> create table student_joins (rollno number, name varchar2(20), address varchar2(20), phone
+  2  number, age number);
+
+Table created.
+
+SQL> select * from student_joins;
+
+no rows selected
+
+SQL> create table studentcourse (courseid number, rollno number);
+
+Table created.
+
+SQL> desc studentcourse
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSEID                                           NUMBER
+ ROLLNO                                             NUMBER
+
+SQL> insert into student values (&rollno, '&name','&address',&phone,&age);
+Enter value for rollno: 1
+Enter value for name: Nishita
+Enter value for address: Goregoan
+Enter value for phone: 7070
+Enter value for age: 23
+old   1: insert into student values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student values (1, 'Nishita','Goregoan',7070,23)
+insert into student values (1, 'Nishita','Goregoan',7070,23)
+            *
+ERROR at line 1:
+ORA-00913: too many values 
+
+
+SQL> insert into student_joins values (&rollno, '&name','&address',&phone,&age);
+Enter value for rollno: 1
+Enter value for name: NISHITA
+Enter value for address: GOREGOAN
+Enter value for phone: 7070
+Enter value for age: 23
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (1, 'NISHITA','GOREGOAN',7070,23)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 2
+Enter value for name: HAMMAD
+Enter value for address: KURLA
+Enter value for phone: 9820
+Enter value for age: 21
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (2, 'HAMMAD','KURLA',9820,21)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 3
+Enter value for name: MAULIKA
+Enter value for address: VAPI
+Enter value for phone: 8586
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (3, 'MAULIKA','VAPI',8586,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 4
+Enter value for name: DIKSHA
+Enter value for address: SEWRI
+Enter value for phone: 9635
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (4, 'DIKSHA','SEWRI',9635,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 5
+Enter value for name: RIYA
+Enter value for address: CHURNIROAD
+Enter value for phone: 8456
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (5, 'RIYA','CHURNIROAD',8456,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 6
+Enter value for name: SIDDESH
+Enter value for address: THANE
+Enter value for phone: 4561
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (6, 'SIDDESH','THANE',4561,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 7
+Enter value for name: PREETI
+Enter value for address: VILEPARLE
+Enter value for phone: 9658
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (7, 'PREETI','VILEPARLE',9658,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 8
+Enter value for name: ANURADHA
+Enter value for address: THANE
+Enter value for phone: 2578
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (8, 'ANURADHA','THANE',2578,22)
+
+1 row created.
+
+SQL> /
+Enter value for rollno: 9
+Enter value for name: DIVYA
+Enter value for address: VASAI
+Enter value for phone: 9861
+Enter value for age: 22
+old   1: insert into student_joins values (&rollno, '&name','&address',&phone,&age)
+new   1: insert into student_joins values (9, 'DIVYA','VASAI',9861,22)
+
+1 row created.
+
+SQL> SELECT * FROM STUDENT_JOINS;
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+         1 NISHITA              GOREGOAN                   7070         23      
+         2 HAMMAD               KURLA                      9820         21      
+         3 MAULIKA              VAPI                       8586         22      
+         4 DIKSHA               SEWRI                      9635         22      
+         5 RIYA                 CHURNIROAD                 8456         22      
+         6 SIDDESH              THANE                      4561         22      
+         7 PREETI               VILEPARLE                  9658         22      
+         8 ANURADHA             THANE                      2578         22      
+         9 DIVYA                VASAI                      9861         22      
+
+9 rows selected.
+
+SQL> RENAME STUDENT_JOINS TO STUDENT;
+RENAME STUDENT_JOINS TO STUDENT
+                        *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> SELECT * froM STUDENT;
+
+no rows selected
+
+SQL> DESC STUDENT
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ROLL_NO                                   NOT NULL NUMBER(3)
+ NAME                                               VARCHAR2(50)
+ COLLEGE                                            VARCHAR2(50)
+
+SQL> DROP TABLE STUDENT;
+
+Table dropped.
+
+SQL> RENAME STUDENT_JOINS TO STUDENT;
+
+Table renamed.
+
+SQL> insert into studentcourse values (&courseid,&rollno);
+Enter value for courseid: 1
+Enter value for rollno: 1
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (1,1)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 2
+Enter value for rollno: 2
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (2,2)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 2
+Enter value for rollno: 3
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (2,3)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 3
+Enter value for rollno: 4
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (3,4)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 1
+Enter value for rollno: 5
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (1,5)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 4
+Enter value for rollno: 9
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (4,9)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 5
+Enter value for rollno: 10
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (5,10)
+
+1 row created.
+
+SQL> /
+Enter value for courseid: 4
+Enter value for rollno: 11
+old   1: insert into studentcourse values (&courseid,&rollno)
+new   1: insert into studentcourse values (4,11)
+
+1 row created.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT 8 FROM STUDENTCOURSE;
+
+         8                                                                      
+----------                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+
+8 rows selected.
+
+SQL> DESC STUDENTCOURSE
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSEID                                           NUMBER
+ ROLLNO                                             NUMBER
+
+SQL> SELECT * FROM STUDENTCOURSE;
+
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1          1                                                           
+         2          2                                                           
+         2          3                                                           
+         3          4                                                           
+         1          5                                                           
+         4          9                                                           
+         5         10                                                           
+         4         11                                                           
+
+8 rows selected.
+
+SQL> select studentcourse.courseid, student.name, student.age from studentcourse inner join student on student.rollno=studentcourse.rollno;
+
+  COURSEID NAME                        AGE                                      
+---------- -------------------- ----------                                      
+         1 NISHITA                      23                                      
+         2 HAMMAD                       21                                      
+         2 MAULIKA                      22                                      
+         3 DIKSHA                       22                                      
+         1 RIYA                         22                                      
+         4 DIVYA                        22                                      
+
+6 rows selected.
+
+SQL> select student.name, studentcourse.courseid from student left join studentcourse on student.rollno=studentcourse.rollno;
+
+NAME                   COURSEID                                                 
+-------------------- ----------                                                 
+NISHITA                       1                                                 
+HAMMAD                        2                                                 
+MAULIKA                       2                                                 
+DIKSHA                        3                                                 
+RIYA                          1                                                 
+DIVYA                         4                                                 
+ANURADHA                                                                        
+SIDDESH                                                                         
+PREETI                                                                          
+
+9 rows selected.
+
+SQL> select student.name, studentcourse.courseid from student right outer join studentcourse on student.rollno=studentcourse.rollno;
+
+NAME                   COURSEID                                                 
+-------------------- ----------                                                 
+NISHITA                       1                                                 
+HAMMAD                        2                                                 
+MAULIKA                       2                                                 
+DIKSHA                        3                                                 
+RIYA                          1                                                 
+DIVYA                         4                                                 
+                              5                                                 
+                              4                                                 
+
+8 rows selected.
+
+SQL> select student.name, studentcourse.courseid from student right outer join studentcourse on student.rollno=studentcourse.rollno;
+
+NAME                   COURSEID                                                 
+-------------------- ----------                                                 
+NISHITA                       1                                                 
+HAMMAD                        2                                                 
+MAULIKA                       2                                                 
+DIKSHA                        3                                                 
+RIYA                          1                                                 
+DIVYA                         4                                                 
+                              5                                                 
+                              4                                                 
+
+8 rows selected.
+
+SQL> select student.name, studentcourse.courseid from student FULL join studentcourse on student.rollno=studentcourse.rollno;
+
+NAME                   COURSEID                                                 
+-------------------- ----------                                                 
+NISHITA                       1                                                 
+HAMMAD                        2                                                 
+MAULIKA                       2                                                 
+DIKSHA                        3                                                 
+RIYA                          1                                                 
+DIVYA                         4                                                 
+ANURADHA                                                                        
+SIDDESH                                                                         
+PREETI                                                                          
+                              5                                                 
+                              4                                                 
+
+11 rows selected.
+
+SQL> SELECT * FROM STUDENT CROSS JOIN STUDENTCOURSE;
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         1          1                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         1          1                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         1          1                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         1          1                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         1          1                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         1          1                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         2          2                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         2          2                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         2          2                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         2          2                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         2          2                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         2          2                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         2          3                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         2          3                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         2          3                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         2          3                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         2          3                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         2          3                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         3          4                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         3          4                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         3          4                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         3          4                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         3          4                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         3          4                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         1          5                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         1          5                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         1          5                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         1          5                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         1          5                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         1          5                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         4          9                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         4          9                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         4          9                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         4          9                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         4          9                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         4          9                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         5         10                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         5         10                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         5         10                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         5         10                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         5         10                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         5         10                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         4         11                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         4         11                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         4         11                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         4         11                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         4         11                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         4         11                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         4         11                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         4         11                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         4         11                                                           
+                                                                                
+
+72 rows selected.
+
+SQL> SELECT * FROM STUDENTCOURSE;
+
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1          1                                                           
+         2          2                                                           
+         2          3                                                           
+         3          4                                                           
+         1          5                                                           
+         4          9                                                           
+         5         10                                                           
+         4         11                                                           
+
+8 rows selected.
+
+SQL> SELECT * FROM STUDENT;
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+         1 NISHITA              GOREGOAN                   7070         23      
+         2 HAMMAD               KURLA                      9820         21      
+         3 MAULIKA              VAPI                       8586         22      
+         4 DIKSHA               SEWRI                      9635         22      
+         5 RIYA                 CHURNIROAD                 8456         22      
+         6 SIDDESH              THANE                      4561         22      
+         7 PREETI               VILEPARLE                  9658         22      
+         8 ANURADHA             THANE                      2578         22      
+         9 DIVYA                VASAI                      9861         22      
+
+9 rows selected.
+
+SQL> SELECT * FROM STUDENT,STUDENTCOURSE;
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         1          1                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         1          1                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         1          1                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         1          1                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         1          1                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         1          1                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         1          1                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         2          2                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         2          2                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         2          2                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         2          2                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         2          2                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         2          2                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         2          2                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         2          3                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         2          3                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         2          3                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         2          3                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         2          3                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         2          3                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         2          3                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         3          4                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         3          4                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         3          4                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         3          4                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         3          4                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         3          4                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         3          4                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         1          5                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         1          5                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         1          5                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         1          5                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         1          5                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         1          5                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         1          5                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         4          9                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         4          9                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         4          9                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         4          9                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         4          9                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         4          9                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         4          9                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         5         10                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         5         10                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         5         10                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         5         10                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         5         10                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         5         10                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         5         10                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         1 NISHITA              GOREGOAN                   7070         23      
+         4         11                                                           
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         4         11                                                           
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         4         11                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         4 DIKSHA               SEWRI                      9635         22      
+         4         11                                                           
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         4         11                                                           
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+         4         11                                                           
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID     ROLLNO                                                           
+---------- ----------                                                           
+         7 PREETI               VILEPARLE                  9658         22      
+         4         11                                                           
+                                                                                
+         8 ANURADHA             THANE                      2578         22      
+         4         11                                                           
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         4         11                                                           
+                                                                                
+
+72 rows selected.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT * FROM STUDENT NATURAL LEFT JOIN STUDENTCOURSE;
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID                                                                      
+----------                                                                      
+         1 NISHITA              GOREGOAN                   7070         23      
+         1                                                                      
+                                                                                
+         2 HAMMAD               KURLA                      9820         21      
+         2                                                                      
+                                                                                
+         3 MAULIKA              VAPI                       8586         22      
+         2                                                                      
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID                                                                      
+----------                                                                      
+         4 DIKSHA               SEWRI                      9635         22      
+         3                                                                      
+                                                                                
+         5 RIYA                 CHURNIROAD                 8456         22      
+         1                                                                      
+                                                                                
+         9 DIVYA                VASAI                      9861         22      
+         4                                                                      
+                                                                                
+
+    ROLLNO NAME                 ADDRESS                   PHONE        AGE      
+---------- -------------------- -------------------- ---------- ----------      
+  COURSEID                                                                      
+----------                                                                      
+         8 ANURADHA             THANE                      2578         22      
+                                                                                
+                                                                                
+         6 SIDDESH              THANE                      4561         22      
+                                                                                
+                                                                                
+         7 PREETI               VILEPARLE                  9658         22      
+                                                                                
+                                                                                
+
+9 rows selected.
+
+SQL> SPOOL OFF

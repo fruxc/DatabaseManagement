@@ -1,0 +1,111 @@
+create table COLLEGE_02 (COLLEGEID NUMBER, NAME VARCHAR2(25), ADDRESS VARCHAR2(50));
+
+Table created.
+
+SQL> DESC COLLEGE_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COLLEGEID                                          NUMBER
+ NAME                                               VARCHAR2(25)
+ ADDRESS                                            VARCHAR2(50)
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_01.SQL
+Enter value for collegeid: 1
+old   5: x.COLLEGEID := &COLLEGEID;
+new   5: x.COLLEGEID := 1;
+Enter value for name: SPIT
+old   6: x.NAME := '&NAME';
+new   6: x.NAME := 'SPIT';
+Enter value for address: MUNSHI NAGAR
+old   7: X.ADDRESS := '&ADDRESS'
+new   7: X.ADDRESS := 'MUNSHI NAGAR'
+INSERT INTO COLLEGE_02 VALUES(X.COLLEGEID,X.NAME,X.ADDRESS);
+*
+ERROR at line 8:
+ORA-06550: line 8, column 1: 
+PLS-00103: Encountered the symbol "INSERT" when expecting one of the following: 
+* & = - + ; < / > at in is mod remainder not rem 
+<an exponent (**)> <> or != or ~= >= <= <> and or like LIKE2_ 
+LIKE4_ LIKEC_ between || multiset member SUBMULTISET_ 
+The symbol ";" was substituted for "INSERT" to continue. 
+
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_01.SQL
+Enter value for collegeid: 1
+old   5: x.COLLEGEID := &COLLEGEID;
+new   5: x.COLLEGEID := 1;
+Enter value for name: SPIT
+old   6: x.NAME := '&NAME';
+new   6: x.NAME := 'SPIT';
+Enter value for address: MUNSHI NAGAR
+old   7: X.ADDRESS := '&ADDRESS';
+new   7: X.ADDRESS := 'MUNSHI NAGAR';
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM COLLEGE_02;
+
+ COLLEGEID NAME                                                                 
+---------- -------------------------                                            
+ADDRESS                                                                         
+--------------------------------------------------                              
+         1 SPIT                                                                 
+MUNSHI NAGAR                                                                    
+                                                                                
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_02.SQL
+Enter value for address: ANDHERI
+old   5: x.address := '&address';
+new   5: x.address := 'ANDHERI';
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM COLLEGE_02;
+
+ COLLEGEID NAME                                                                 
+---------- -------------------------                                            
+ADDRESS                                                                         
+--------------------------------------------------                              
+         1 SPIT                                                                 
+ANDHERI                                                                         
+                                                                                
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> @E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF;
+SQL> @ E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+ID =                                                                            
+NAME =                                                                          
+ADDRESS =                                                                       
+
+PL/SQL procedure successfully completed.
+
+SQL>  @ E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQ
+SP2-0310: unable to open file "E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQ"
+SQL>  @ E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+College ID: 1 Name: SPIT Address: ANDHERI                                       
+
+PL/SQL procedure successfully completed.
+
+SQL>  @ E:\HammadDBMS\PLSQL_RECORDS\RECORD_03.SQL
+College ID: 1                                                                   
+Name: SPIT                                                                      
+Address: ANDHERI                                                                
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF;

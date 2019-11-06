@@ -1,0 +1,11 @@
+ db.Students.insert({"_id":1, "UCID":2018450001, "RollNo":01, "Name":"Nishita","Email":"nishita.aishwarya@spit.ac.in","Address":"Patna","Age":23}) db.Students.insert({"_id":2, "UCID":2018450002, "RollNo":02, "Name":"Hammad","Email":"hammad.ansari@spit.ac.in","Address":"Mumbai","Age":21}) db.Students.insert({"_id":3, "UCID":2018450003, "RollNo":03, "Name":"Maulika","Email":"maulika.arekar@spit.ac.in","Address":"Gujarat","Age":22}) db.Students.insert({"_id":4, "UCID":2018450004, "RollNo":04, "Name":"Diksha","Email":"diksha.bandagale@spit.ac.in","Address":"Mumbai","Age":22}) db.Students.insert({"_id":5, "UCID":2018450005, "RollNo":05, "Name":"Riya","Email":"riya.barve@spit.ac.in","Address":"Mumbai","Age":21})
+ 
+db.Students.update({"Name":"Hammad"},{$set:{"DOB":new Date("1998-04-17")}})
+db.Students.update({"Name":"Nishita"},{$set:{"DOB":new Date("09/21/1995")}})
+db.Students.update({"Name":"Maulika"},{$set:{"DOB":new Date("07/29/1997")}})
+db.Students.update({"Name":"Diksha"},{$set:{"DOB":new Date("11/04/1997")}})
+db.Students.update({"Name":"Riya"},{$set:{"DOB":new Date("04/13/1998")}})
+
+db.Students.update({"Name":"Hammad"},{$set:{"Hobbies":["Gym","Code","Soccer"]}})
+db.Students.update({"Name":"Maulika"},{$set:{"Hobbies":["Gym","Movies","Foodie"]}})
+db.Students.update({"Name":"Nishita"},{$set:{"Hobbies":["Reading","Dancing"]}})

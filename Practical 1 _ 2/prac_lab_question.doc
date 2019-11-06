@@ -1,0 +1,395 @@
+SQL> select  cname from deposit_02 where bname in (select bname from deposit_02 where cname = 'SUNIL');
+
+CNAME                                                                           
+------------------                                                              
+SUNIL                                                                           
+
+SQL> select loadno,amount from borrow_02 where bname in (select bname from deposit_02 where cname='SUNIL');
+select loadno,amount from borrow_02 where bname in (select bname from deposit_02 where cname='SUNIL')
+       *
+ERROR at line 1:
+ORA-00904: "LOADNO": invalid identifier 
+
+
+SQL> select loanno,amount from borrow_02 where bname in (select bname from deposit_02 where cname='SUNIL');
+
+LOANN     AMOUNT                                                                
+----- ----------                                                                
+206         5000                                                                
+
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> select * from branch_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> select * from deposit_02 where bname in (select bname from branch_02 where city = 'NAGPUR');
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+
+SQL> select cname from deposit_02 where bname in (select bname from branch_02 where city = 'NAGPUR');
+
+CNAME                                                                           
+------------------                                                              
+ANIL                                                                            
+SUNIL                                                                           
+
+SQL> select cname from deposit_02 where cname in (select cname from customer-02 where city = 'NAGPUR');
+select cname from deposit_02 where cname in (select cname from customer-02 where city = 'NAGPUR')
+                                                                       *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> select cname from deposit_02 where cname in (select cname from customer_02 where city = 'NAGPUR');
+
+CNAME                                                                           
+------------------                                                              
+MADHURI                                                                         
+PRAMOD                                                                          
+
+SQL> clear screen
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> select * from branch_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> select * from customer_02;
+
+CNAME                CITY                                                       
+-------------------- --------------------                                       
+ANIL                 KOLKATA                                                    
+SUNIL                DELHI                                                      
+MEHUL                BARODA                                                     
+MANDAR               PATNA                                                      
+MADHURI              NAGPUR                                                     
+PRAMOD               NAGPUR                                                     
+SANDIP               SURAT                                                      
+SHIVANI              MUMBAI                                                     
+KRANTI               MUMBAI                                                     
+NAREN                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> select cname form deposit_02 where bname in (select bname from deposit_02 where cname='SUNIL');
+select cname form deposit_02 where bname in (select bname from deposit_02 where cname='SUNIL')
+                  *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select cname from deposit_02 where bname in (select bname from deposit_02 where cname='SUNIL');
+
+CNAME                                                                           
+------------------                                                              
+SUNIL                                                                           
+
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 );
+
+CNAME                                                                           
+------------------                                                              
+NAREN                                                                           
+
+SQL> SELECT * FROM BRANCH_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE BNAME IN ( SELECT BNAME FROM BRANCH_02 WHERE CITY =' NAGPUR'));
+
+no rows selected
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ( SELECT CNAME FROM CUSTOMER_02 WHERE CITY =' NAGPUR'));
+
+no rows selected
+
+SQL> SELECT CNAME FROM CUSTOMER_02 WHERE CITY='NAGPUR';
+
+CNAME                                                                           
+--------------------                                                            
+MADHURI                                                                         
+PRAMOD                                                                          
+
+SQL> SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN (MADHURI,PRAMOD);
+SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN (MADHURI,PRAMOD)
+                                                           *
+ERROR at line 1:
+ORA-00904: "PRAMOD": invalid identifier 
+
+
+SQL> `SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ('MADHURI','PRAMOD');
+SP2-0734: unknown command beginning "`SELECT MA..." - rest of line ignored.
+SQL> SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ('MADHURI','PRAMOD');
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+       3000                                                                     
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN (SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ( SELECT CNAME FROM CUSTOMER_02 WHERE CITY =' NAGPUR'));
+
+no rows selected
+
+SQL> SELECT CNAME FROM DEPOSIT WHERE AMOUNT = 3000;
+SELECT CNAME FROM DEPOSIT WHERE AMOUNT = 3000
+                  *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT = 3000;
+
+CNAME                                                                           
+------------------                                                              
+PRAMOD                                                                          
+
+SQL> SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ( SELECT CNAME FROM CUSTOMER_02 WHERE CITY =' NAGPUR');
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+                                                                                
+
+SQL> SELECT CNAME FROM CUSTOMER_02 WHERE CITY =' NAGPUR');
+SELECT CNAME FROM CUSTOMER_02 WHERE CITY =' NAGPUR')
+                                                   *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SELECT CNAME FROM CUSTOMER_02 WHERE CITY ='NAGPUR')
+  2  ;
+SELECT CNAME FROM CUSTOMER_02 WHERE CITY ='NAGPUR')
+                                                  *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SELECT CNAME FROM CUSTOMER_02 WHERE CITY ='NAGPUR';
+
+CNAME                                                                           
+--------------------                                                            
+MADHURI                                                                         
+PRAMOD                                                                          
+
+SQL> SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ( SELECT CNAME FROM CUSTOMER_02 WHERE CITY ='NAGPUR');
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+       3000                                                                     
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN (SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE CNAME IN ( SELECT CNAME FROM CUSTOMER_02 WHERE CITY ='NAGPUR'));
+
+CNAME                                                                           
+------------------                                                              
+PRAMOD                                                                          
+
+SQL> select * FROM BRANCH_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SPOOL OFF;
+SQL> clear screen
+SQL> spool off
+SQL> SELECT BNAME FROM DEPOSIT_02 GROUP BY BNAME HAVING COUNT(CNAME)>= ALL(SELECT COUNT(CNAME) FROM DEPOSIT_02 GROUP BY BNAME);.
+  2  ;
+SELECT BNAME FROM DEPOSIT_02 GROUP BY BNAME HAVING COUNT(CNAME)>= ALL(SELECT COUNT(CNAME) FROM DEPOSIT_02 GROUP BY BNAME);.
+                                                                                                                         *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> SELECT BNAME FROM DEPOSIT_02 GROUP BY BNAME HAVING COUNT(CNAME)>= ALL(SELECT COUNT(CNAME) FROM DEPOSIT_02 GROUP BY BNAME);
+
+BNAME                                                                           
+------------------                                                              
+VRCE                                                                            
+AJNI                                                                            
+KAROLBAGH                                                                       
+CHANDNI                                                                         
+M.G.ROAD                                                                        
+VIRAR                                                                           
+POWAI                                                                           
+ANDHERI                                                                         
+NEHRU PLACE                                                                     
+
+9 rows selected.
+
+SQL> SELECT MAX(AMOUNT) FROM DEPOSIT_02 WHERE BNAME IN(SELECT BNAME FROM BRANCH_02 WHERE CITY IN(SELECT CITY FROM BRANCH_02 WHERE BNAME IN(SELECT BNAME FROM DEPOSIT_02 WHERE CNAME = 'SUNIL')));
+
+MAX(AMOUNT)                                                                     
+-----------                                                                     
+       5000                                                                     
+
+SQL> SELECT COUNT(CITY) FROM CUSTOMER_02 WHERE CITY IN (SELECT CITY FROM BRANCH_02);
+
+COUNT(CITY)                                                                     
+-----------                                                                     
+          6                                                                     
+
+SQL> CLEARSCREEN
+SP2-0734: unknown command beginning "CLEARSCREE..." - rest of line ignored.
+SQL> CLEAR SCREEN
+SQL> SELECT CNAMEFROM DEPOSIT_02 WHERE AMOUNT > ANY(SELECT AVG(AMOUNT) FROM DEPOSIT_02 WHERE BNAME IN (SELECT BNAME FROM BRANCH_02 GROUP BY BNAME));
+SELECT CNAMEFROM DEPOSIT_02 WHERE AMOUNT > ANY(SELECT AVG(AMOUNT) FROM DEPOSIT_02 WHERE BNAME IN (SELECT BNAME FROM BRANCH_02 GROUP BY BNAME))
+                            *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT > ANY(SELECT AVG(AMOUNT) FROM DEPOSIT_02 WHERE BNAME IN (SELECT BNAME FROM BRANCH_02 GROUP BY BNAME));
+
+CNAME                                                                           
+------------------                                                              
+SUNIL                                                                           
+MEHUL                                                                           
+KRANTI                                                                          
+NAREN                                                                           
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SELECT * FROM BRANCH_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> spool off

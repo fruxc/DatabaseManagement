@@ -1,0 +1,214 @@
+CLEAR SCREEN
+SQL> DESC EMP;
+ERROR:
+ORA-04043: object EMP does not exist 
+
+
+SQL> CREATE TABLE EMP(EMPID NUMBER, EMPNAME VARCHAR2(20),SALARY NUMBER(10,2));
+
+Table created.
+
+SQL> DESC EMP
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                              NUMBER
+ EMPNAME                                            VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+
+SQL> @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_1.SQL
+SQL>  @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_1.SQL
+
+Trigger created.
+
+SQL> INSERT INTO EMP VALUES(1,'HAMMAD',3000);
+INSERT INTO EMP VALUES(1,'HAMMAD',3000)
+            *
+ERROR at line 1:
+ORA-20001: Salary cant be less than 10000 
+ORA-06512: at "SYSTEM.EMP_1", line 5 
+ORA-04088: error during execution of trigger 'SYSTEM.EMP_1' 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_2.SQL
+
+Trigger created.
+
+SQL> INSERT INTO EMP VALUES(100,'HAMMAD',30000);
+INSERT INTO EMP VALUES(100,'HAMMAD',30000)
+            *
+ERROR at line 1:
+ORA-20002: EMP ID CANNOT BE MORE THAN 2 DIGITS 
+ORA-06512: at "SYSTEM.EMP_2", line 5 
+ORA-04088: error during execution of trigger 'SYSTEM.EMP_2' 
+
+
+SQL> INSERT INTO EMP VALUES(1,'HAMMAD',95000);
+
+1 row created.
+
+SQL> SELECT * FROM EMP;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+
+SQL> ALTER TABLE EMP RENAME EMP_02;
+ALTER TABLE EMP RENAME EMP_02
+                       *
+ERROR at line 1:
+ORA-14155: missing PARTITION or SUBPARTITION keyword 
+
+
+SQL> RENAME TABLE EMP TO EMP_02;
+RENAME TABLE EMP TO EMP_02
+       *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> RENAME EMP TO EMP_02;
+
+Table renamed.
+
+SQL> SELECT * FROM EMP_02;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+
+SQL> CLEAR SCREEN
+SQL> 
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+AFTER INSERT, UPDATE, DELETE
+            *
+ERROR at line 2:
+ORA-00969: missing ON keyword 
+
+
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Warning: Trigger created with compilation errors.
+
+SQL> SHOW ERRORS
+Errors for TRIGGER EMP_3:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/1      PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         := ( ; not null range default character                                
+         The symbol ";" was substituted for "BEGIN" to continue.                
+                                                                                
+6/4      PLS-00049: bad bind variable 'NEW.MUSER'                               
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Warning: Trigger created with compilation errors.
+
+SQL> SHOW ERROR
+Errors for TRIGGER EMP_3:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+6/4      PLS-00049: bad bind variable 'NEW.MUSER'                               
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Trigger created.
+
+SQL> INSERT INTO EMP_02 VALUES(1,'ABC',45555);
+
+1 row created.
+
+SQL> SELECT * FROM EMP_02;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+         1 ABC                       45555                                      
+
+SQL> SELECT * FROM ALL_USERS;
+
+USERNAME                          USER_ID CREATED                               
+------------------------------ ---------- ---------                             
+BAZID                                  58 20-AUG-19                             
+HAMMAD                                 55 25-JUL-19                             
+MGMT_VIEW                              53 11-JUL-19                             
+MDDATA                                 50 11-JUL-19                             
+SYSMAN                                 51 11-JUL-19                             
+MDSYS                                  46 11-JUL-19                             
+SI_INFORMTN_SCHEMA                     45 11-JUL-19                             
+ORDPLUGINS                             44 11-JUL-19                             
+ORDSYS                                 43 11-JUL-19                             
+OLAPSYS                                47 11-JUL-19                             
+ANONYMOUS                              39 11-JUL-19                             
+
+USERNAME                          USER_ID CREATED                               
+------------------------------ ---------- ---------                             
+XDB                                    38 11-JUL-19                             
+CTXSYS                                 36 11-JUL-19                             
+EXFSYS                                 34 11-JUL-19                             
+WMSYS                                  25 11-JUL-19                             
+DBSNMP                                 24 11-JUL-19                             
+TSMSYS                                 21 11-JUL-19                             
+DMSYS                                  35 11-JUL-19                             
+DIP                                    19 11-JUL-19                             
+OUTLN                                  11 11-JUL-19                             
+SYSTEM                                  5 11-JUL-19                             
+SYS                                     0 11-JUL-19                             
+
+22 rows selected.
+
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Trigger created.
+
+SQL> INSERT INTO EMP_02 VALUES(1,'ABC',454542);
+
+1 row created.
+
+SQL> SELECT * FROM EMP_02;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+         1 ABC                       45555                                      
+         1 ABC                      454542                                      
+
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Trigger created.
+
+SQL> INSERT INTO EMP_02 VALUES(1,'ABC',454542);
+
+1 row created.
+
+SQL> SELECT * FROM EMP_02;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+         1 ABC                       45555                                      
+         1 ABC                      454542                                      
+         1 ABC                      454542                                      
+
+SQL> SELECT USER FROM DUAL;
+
+USER                                                                            
+------------------------------                                                  
+SYSTEM                                                                          
+
+SQL> @ E:\HAMMADDBMS\PLSQL_TRIGGER\TRIG_3.SQL
+
+Warning: Trigger created with compilation errors.
+
+SQL> SHOW ERROR
+Errors for TRIGGER EMP_3:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/7      PL/SQL: Item ignored                                                   
+3/12     PLS-00302: component 'USER' must be declared                           
+6/1      PL/SQL: Statement ignored                                              
+6/4      PLS-00320: the declaration of the type of this expression is           
+         incomplete or malformed                                                
+                                                                                
+SQL> SPOOL OFF

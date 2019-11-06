@@ -1,0 +1,338 @@
+SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1120 01-MAR-95                
+101   SUNIL              AJNI                     6000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_1.SQL
+    DBMS_OUTPUT.PUT_LINE(R.CNAME ||' ' || ADATE);
+                                          *
+ERROR at line 6:
+ORA-06550: line 6, column 43: 
+PLS-00201: identifier 'ADATE' must be declared 
+ORA-06550: line 6, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL> E:\HammadDBMS\PLSQL_PROCEDURES\PRO_1.SQL
+SP2-0734: unknown command beginning "E:\HammadD..." - rest of line ignored.
+SQL> @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_1.SQL
+ANIL 01-MAR-95                                                                  
+SUNIL 04-JAN-96                                                                 
+MEHUL 17-NOV-95                                                                 
+MADHURI 17-DEC-95                                                               
+PRAMOD 27-MAR-96                                                                
+SANDIP 31-MAR-96                                                                
+SHIVANI 05-SEP-95                                                               
+KRANTI 02-JUL-95                                                                
+NAREN 10-AUG-95                                                                 
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE > '12-MAR-98';
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE > 12-MAR-98;
+SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE > 12-MAR-98
+                                                     *
+ERROR at line 1:
+ORA-00904: "MAR": invalid identifier 
+
+
+SQL> DESC DEPOSIT_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ AC_NO                                     NOT NULL VARCHAR2(5)
+ CNAME                                     NOT NULL VARCHAR2(18)
+ BNAME                                     NOT NULL VARCHAR2(18)
+ AMOUNT                                             NUMBER(8,2)
+ ADATE                                              DATE
+
+SQL> SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE > '12-MAR-98';
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT cname , adate from deposit_02 where adate>'12-MAR-98';
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT cname, adate FROM deposit_02 WHERE adate > '12-MAR-98';
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> desc deposit_02
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ AC_NO                                     NOT NULL VARCHAR2(5)
+ CNAME                                     NOT NULL VARCHAR2(18)
+ BNAME                                     NOT NULL VARCHAR2(18)
+ AMOUNT                                             NUMBER(8,2)
+ ADATE                                              DATE
+
+SQL> SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('12-MAR-1998','DD-MON-YY');
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT TO_DATE('2012-06-05', 'YYYY-MM-DD') FROM dual;
+
+TO_DATE('                                                                       
+---------                                                                       
+05-JUN-12                                                                       
+
+SQL> SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('1998-03-12','DD-MON-YY');
+SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('1998-03-12','DD-MON-YY')
+                                                          *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+SQL> SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('12-03-1998','DD-MON-YY');
+SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('12-03-1998','DD-MON-YY')
+                                                          *
+ERROR at line 1:
+ORA-01843: not a valid month 
+
+
+SQL> SELECT cname, adate FROM deposit_02 WHERE adate > to_DATE('12-MAR-1998','DD-MON-YY');
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT cname, TO_DATE(adate,'DD-MON-YY') FROM deposit_02 WHERE adate > TO_DATE('12-MAR-1998','DD-MON-YY');
+
+CNAME              TO_DATE(A                                                    
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> SELECT cname, TO_DATE(adate,'DD-MON-YY') FROM deposit_02 WHERE adate < TO_DATE('12-MAR-1998','DD-MON-YY');
+
+no rows selected
+
+SQL> SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE < '12-MAR-98';
+
+no rows selected
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1120 01-MAR-95                
+101   SUNIL              AJNI                     6000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SELECT CNAME, ADATE FROM DEPOSIT_02 WHERE ADATE > '12-MAR-98';
+
+CNAME              ADATE                                                        
+------------------ ---------                                                    
+ANIL               01-MAR-95                                                    
+SUNIL              04-JAN-96                                                    
+MEHUL              17-NOV-95                                                    
+MADHURI            17-DEC-95                                                    
+PRAMOD             27-MAR-96                                                    
+SANDIP             31-MAR-96                                                    
+SHIVANI            05-SEP-95                                                    
+KRANTI             02-JUL-95                                                    
+NAREN              10-AUG-95                                                    
+
+9 rows selected.
+
+SQL> @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_1.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+CREATE OR REPLACE PROCEDURE PRO_2(CUSTNAME IN VARCHAR2) IS
+*
+ERROR at line 2:
+ORA-06550: line 2, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+Enter value for cust:  @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+old   4:     CUST := '&CUST';
+new   4:     CUST := ' @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL';
+    PRO_2(CUST);
+    *
+ERROR at line 5:
+ORA-06550: line 5, column 5: 
+PLS-00201: identifier 'PRO_2' must be declared 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL>  @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+END OPENING_DATE;
+    *
+ERROR at line 12:
+ORA-06550: line 12, column 5: 
+PLS-00113: END identifier 'OPENING_DATE' must match 'PRO_2' at line 2, column 
+11 
+ORA-06550: line 12, column 17: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+begin function package pragma procedure form 
+
+
+Enter value for cust: old   4:     CUST := '&CUST';
+new   4: 
+    PRO_2(CUST);
+    *
+ERROR at line 5:
+ORA-06550: line 5, column 5: 
+PLS-00201: identifier 'PRO_2' must be declared 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+
+SQL>  @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+END PRO_2;
+         *
+ERROR at line 12:
+ORA-06550: line 12, column 10: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+begin function package pragma procedure form 
+
+
+Enter value for cust: old   4:     CUST := '&CUST';
+new   4: 
+    PRO_2(CUST);
+    *
+ERROR at line 5:
+ORA-06550: line 5, column 5: 
+PLS-00201: identifier 'PRO_2' must be declared 
+ORA-06550: line 5, column 5: 
+PL/SQL: Statement ignored 
+
+
+
+SQL>  @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+Enter value for cust: ANIL
+old  16:     CUST := '&CUST';
+new  16:     CUST := 'ANIL';
+    DBMS_OUTPUT.PUT_LINE('ACCOUNT NUMBER : '|| R.ACNO);
+                                                 *
+ERROR at line 7:
+ORA-06550: line 7, column 50: 
+PLS-00302: component 'ACNO' must be declared 
+ORA-06550: line 7, column 5: 
+PL/SQL: Statement ignored 
+
+
+SQL>  @E:\HammadDBMS\PLSQL_PROCEDURES\PRO_2.SQL
+Enter value for cust: ANIL
+old  16:     CUST := '&CUST';
+new  16:     CUST := 'ANIL';
+ACCOUNT NUMBER : 100                                                            
+NAME : ANIL                                                                     
+BRANCH : VRCE                                                                   
+AMOUNT : 1120                                                                   
+CREATE DATE : 01-MAR-95                                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF;

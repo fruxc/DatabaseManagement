@@ -1,0 +1,275 @@
+CLEAR SCREEN;
+SQL> CREATE TABLE BATCH_02(BCODE NUMBER, EXPECTEDINCOME NUMBER, NETINCOME NUMBER);
+
+Table created.
+
+SQL> INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME);
+Enter value for bcode: 101
+Enter value for expectedincome: 10000
+Enter value for netincome: 1233
+old   1: INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME)
+new   1: INSERT INTO BATCH_02 VALUES(101,10000,1233)
+
+1 row created.
+
+SQL> /
+Enter value for bcode: 102
+Enter value for expectedincome: 20000
+Enter value for netincome: 1111
+old   1: INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME)
+new   1: INSERT INTO BATCH_02 VALUES(102,20000,1111)
+
+1 row created.
+
+SQL> /
+Enter value for bcode: 103
+Enter value for expectedincome: 30000
+Enter value for netincome: NULL
+old   1: INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME)
+new   1: INSERT INTO BATCH_02 VALUES(103,30000,NULL)
+
+1 row created.
+
+SQL> /
+Enter value for bcode: 104
+Enter value for expectedincome: 40000
+Enter value for netincome: 1000
+old   1: INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME)
+new   1: INSERT INTO BATCH_02 VALUES(104,40000,1000)
+
+1 row created.
+
+SQL> /
+Enter value for bcode: 105
+Enter value for expectedincome: 50000
+Enter value for netincome: NULL
+old   1: INSERT INTO BATCH_02 VALUES(&BCODE,&EXPECTEDINCOME,&NETINCOME)
+new   1: INSERT INTO BATCH_02 VALUES(105,50000,NULL)
+
+1 row created.
+
+SQL> SELECT * FROM BATCH_02;
+
+     BCODE EXPECTEDINCOME  NETINCOME                                            
+---------- -------------- ----------                                            
+       101          10000       1233                                            
+       102          20000       1111                                            
+       103          30000                                                       
+       104          40000       1000                                            
+       105          50000                                                       
+
+SQL> E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_01.SQL
+SP2-0734: unknown command beginning "E:\HammadD..." - rest of line ignored.
+SQL> @E:\HammadDBMS\PLSQL_EXCEPTION
+SP2-0310: unable to open file "E:\HammadDBMS\PLSQL_EXCEPTION.sql"
+SQL> @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_01.SQL
+ 12  ;
+ 13  ;
+ 14  
+SQL> @ E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_01.SQL;
+ 12  /
+END IF;
+*
+ERROR at line 7:
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "END" when expecting one of the following: 
+. ; 
+The symbol ";" was substituted for "END" to continue. 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_01.SQL;
+dividing by zero please check the values again                                  
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_01_E.SQL;
+DIVIDING BY ZERO PLEASE CHECK THE VALUES AGAIN                                  
+
+PL/SQL procedure successfully completed.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL OFF;
+SQL> CLEAR SCREEN
+SQL> SELECT * FROM EMP_02;
+
+     EMPID EMPNAME                  SALARY                                      
+---------- -------------------- ----------                                      
+         1 HAMMAD                    95000                                      
+         1 ABC                       45555                                      
+         1 ABC                      454542                                      
+         1 ABC                      454542                                      
+
+SQL> DESC EMP_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                              NUMBER
+ EMPNAME                                            VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+
+SQL> @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+Enter value for empid: 2
+old   5: X.EMPID := &EMPID;
+new   5: X.EMPID := 2;
+Enter value for empname: NISHITA
+old   6: X.EMPNAME := &EMPNAME;
+new   6: X.EMPNAME := NISHITA;
+Enter value for salary: 3000
+old   7: X.SALARY := &SALARY;
+new   7: X.SALARY := 3000;
+   RAISE LESS_SALARY;
+   *
+ERROR at line 9:
+ORA-06550: line 9, column 4: 
+PLS-00103: Encountered the symbol "RAISE" when expecting one of the following: 
+* & = - + < / > at in is mod remainder not rem then 
+<an exponent (**)> <> or != or ~= >= <= <> and or like LIKE2_ 
+LIKE4_ LIKEC_ between overlaps || multiset year DAY_ member 
+SUBMULTISET_ 
+
+
+SQL>  @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+Enter value for empid: 2
+old   5: X.EMPID := &EMPID;
+new   5: X.EMPID := 2;
+Enter value for empname: NISHITA
+old   6: X.EMPNAME := &EMPNAME;
+new   6: X.EMPNAME := NISHITA;
+Enter value for salary: 3000
+old   7: X.SALARY := &SALARY;
+new   7: X.SALARY := 3000;
+   RAISE LESS_SALARY;
+   *
+ERROR at line 9:
+ORA-06550: line 9, column 4: 
+PLS-00103: Encountered the symbol "RAISE" when expecting one of the following: 
+* & = - + < / > at in is mod remainder not rem then 
+<an exponent (**)> <> or != or ~= >= <= <> and or like LIKE2_ 
+LIKE4_ LIKEC_ between overlaps || multiset year DAY_ member 
+SUBMULTISET_ 
+The symbol "then was inserted before "RAISE" to continue. 
+
+
+SQL>  @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+Enter value for empid: 2
+old   5: X.EMPID := &EMPID;
+new   5: X.EMPID := 2;
+Enter value for empname: NISHITA
+old   6: X.EMPNAME := &EMPNAME;
+new   6: X.EMPNAME := NISHITA;
+Enter value for salary: 3000
+old   7: X.SALARY := &SALARY;
+new   7: X.SALARY := 3000;
+X.EMPNAME := NISHITA;
+             *
+ERROR at line 6:
+ORA-06550: line 6, column 14: 
+PLS-00201: identifier 'NISHITA' must be declared 
+ORA-06550: line 6, column 1: 
+PL/SQL: Statement ignored 
+ORA-06550: line 9, column 10: 
+PLS-00201: identifier 'LESS_SALARY' must be declared 
+ORA-06550: line 9, column 4: 
+PL/SQL: Statement ignored 
+ORA-06550: line 15, column 9: 
+PLS-00201: identifier 'LESS_SALARY' must be declared 
+ORA-06550: line 0, column 0: 
+PL/SQL: Compilation unit analysis terminated 
+
+
+SQL> DESC EMP_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                              NUMBER
+ EMPNAME                                            VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+
+SQL> @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+Enter value for empid: 2
+old   5: X.EMPID := &EMPID;
+new   5: X.EMPID := 2;
+Enter value for empname: NISHITA
+old   6: X.EMPNAME := '&EMPNAME';
+new   6: X.EMPNAME := 'NISHITA';
+Enter value for salary: 3000
+old   7: X.SALARY := &SALARY;
+new   7: X.SALARY := 3000;
+   RAISE LESS_SALARY;
+         *
+ERROR at line 9:
+ORA-06550: line 9, column 10: 
+PLS-00201: identifier 'LESS_SALARY' must be declared 
+ORA-06550: line 9, column 4: 
+PL/SQL: Statement ignored 
+ORA-06550: line 15, column 9: 
+PLS-00201: identifier 'LESS_SALARY' must be declared 
+ORA-06550: line 0, column 0: 
+PL/SQL: Compilation unit analysis terminated 
+
+
+SQL>  @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+Enter value for empid: 2
+old   6: X.EMPID := &EMPID;
+new   6: X.EMPID := 2;
+Enter value for empname: NISHITA
+old   7: X.EMPNAME := '&EMPNAME';
+new   7: X.EMPNAME := 'NISHITA';
+Enter value for salary: 3000
+old   8: X.SALARY := &SALARY;
+new   8: X.SALARY := 3000;
+SALARY SHOULD BE GREATER THAN 10000                                             
+
+PL/SQL procedure successfully completed.
+
+SQL>  @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+SP2-0552: Bind variable "NEW" not declared.
+SQL>  @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+SP2-0552: Bind variable "NEW" not declared.
+SQL> DESC EMP_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                              NUMBER
+ EMPNAME                                            VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+
+SQL> @E:\HammadDBMS\PLSQL_EXCEPTION\EXCEP_02.SQL;
+
+Trigger created.
+
+SQL> INSERT INTO EMP_02 VALUES(2,'NISHITA',5000);
+INSERT INTO EMP_02 VALUES(2,'NISHITA',5000)
+            *
+ERROR at line 1:
+ORA-04098: trigger 'SYSTEM.EMP_3' is invalid and failed re-validation 
+
+
+SQL> DROP TRIGGER EMP_3;
+
+Trigger dropped.
+
+SQL> INSERT INTO EMP_02 VALUES(2,'NISHITA',5000);
+SALARY SHOULD BE GREATER THAN 10000                                             
+INSERT INTO EMP_02 VALUES(2,'NISHITA',5000)
+            *
+ERROR at line 1:
+ORA-20001: Salary cant be less than 10000 
+ORA-06512: at "SYSTEM.EMP_1", line 5 
+ORA-04088: error during execution of trigger 'SYSTEM.EMP_1' 
+
+
+SQL> DROP TRIGGER EMP_1;
+
+Trigger dropped.
+
+SQL> INSERT INTO EMP_02 VALUES(2,'NISHITA',5000);
+SALARY SHOULD BE GREATER THAN 10000                                             
+
+1 row created.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL OFF;

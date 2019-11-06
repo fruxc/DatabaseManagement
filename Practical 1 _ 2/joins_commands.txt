@@ -1,0 +1,23 @@
+create table student (rollno number, name varchar2(20), address varchar2(20), phone
+number, age number);
+
+create table studentcourse (courseid number, rollno number);
+
+insert into student values (&rollno, '&name','&address',&phone,&age);
+
+insert into studentcourse values (&courseid,&rollno);
+
+select studentcourse.courseid, student.name, student.age from studentcourse inner join student on student.rollno=studentcourse.rollno;
+
+select student.name, studentcourse.courseid from student left join studentcourse on student.rollno=studentcourse.rollno;
+
+select student.name, studentcourse.courseid from student right outer join studentcourse on student.rollno=studentcourse.rollno;
+
+select student.name, studentcourse.courseid from student FULL join studentcourse on student.rollno=studentcourse.rollno;
+
+select * from student cross join studentcourse;
+
+SELECT * FROM STUDENT,STUDENTCOURSE;
+
+select * from student natural left join studentcourse;
+

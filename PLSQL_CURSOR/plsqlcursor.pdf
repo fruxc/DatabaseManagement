@@ -1,0 +1,164 @@
+SQL> set serveroutpu ON
+SQL> ed E:\HammadDBMS\PLSQL CURSOR
+
+SQL> @ E:\HammadDBMS\PLSQL CURSOR\cursor_1.sql
+SP2-0310: unable to open file "E:\HammadDBMS\PLSQL.sql"
+SQL> spool off
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 12  /
+BEGIN
+*
+ERROR at line 4:
+ORA-06550: line 4, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+:= ( ; not null range default character 
+The symbol ";" was substituted for "BEGIN" to continue. 
+ORA-06550: line 8, column 33: 
+PLS-00103: Encountered the symbol "`" when expecting one of the following: 
+( - + case mod new null <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> avg 
+count current max min prior sql stddev sum variance  
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 12  /
+    dbms_output.put_line(z.cn ||` ` ||z.am);
+                                *
+ERROR at line 8:
+ORA-06550: line 8, column 33: 
+PLS-00103: Encountered the symbol "`" when expecting one of the following: 
+( - + case mod new null <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> avg 
+count current max min prior sql stddev sum variance execute 
+forall merge time timestamp interval date 
+<a string literal with character set specification> 
+<a number> <a single-quoted SQL string> pipe 
+<an alternatively-quoted string literal with character set specification> 
+<an alternatively-quoted SQL string> 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 12  /
+cursor c1 is select cname cn, amount am from branch_02 where bname = 'VIRAR';
+                              *
+ERROR at line 2:
+ORA-06550: line 2, column 31: 
+PL/SQL: ORA-00904: "AMOUNT": invalid identifier 
+ORA-06550: line 2, column 14: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 2, column 8: 
+PLS-00341: declaration of cursor 'C1' is incomplete or malformed 
+ORA-06550: line 3, column 3: 
+PL/SQL: Item ignored 
+ORA-06550: line 6, column 15: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 6, column 1: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 7, column 13: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 7, column 1: 
+PL/SQL: Statement ignored 
+
+
+SQL> select * from branch_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 13  /
+for z in 1..c1 loop
+            *
+ERROR at line 7:
+ORA-06550: line 7, column 13: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 7, column 1: 
+PL/SQL: Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 13  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06511: PL/SQL: cursor already open 
+ORA-06512: at line 2 
+ORA-06512: at line 7 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 12  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01001: invalid cursor 
+ORA-06512: at line 8 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 15  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06511: PL/SQL: cursor already open 
+ORA-06512: at line 2 
+ORA-06512: at line 7 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 17  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06511: PL/SQL: cursor already open 
+ORA-06512: at line 2 
+ORA-06512: at line 7 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 13  //
+ 14  /
+//
+*
+ERROR at line 13:
+ORA-06550: line 13, column 1: 
+PLS-00103: Encountered the symbol "/"  
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\cursor_1.sql
+ 13  /
+
+PL/SQL procedure successfully completed.
+
+SQL> spool plsql.doc

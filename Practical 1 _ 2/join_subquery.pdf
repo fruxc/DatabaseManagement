@@ -1,0 +1,173 @@
+select l.loanno, l.amount
+  2  from loan l ,depositor d
+  3  where l.bname=d.bname
+  4  and d.cname='SUNIL';
+from loan l ,depositor d
+             *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> clear screen
+SQL> select * from deposit_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> select * from borrow_02;
+
+LOANN CNAME              BNAME                  AMOUNT                          
+----- ------------------ ------------------ ----------                          
+201   ANIL               VRCE                     1000                          
+206   MEHUL              AJNI                     5000                          
+311   SUNIL              DHARAMPETH               3000                          
+321   MADHURI            ANDHERI                  2000                          
+375   PRAMOD             VIRAR                    8000                          
+481   KRANTI             NEHRU PLACE              3000                          
+
+6 rows selected.
+
+SQL> SELECT B.LOANNO, B.AMOUNT FROM BORROW_02 B ,DEPOSIT_02 D WHERE B.BNAME = D.BNAME AND D.CNAME = 'SUNIL';
+
+LOANN     AMOUNT                                                                
+----- ----------                                                                
+206         5000                                                                
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.BNAME = D2.BNAME AND D.CNAME = 'SUNIL';
+
+CNAME                                                                           
+------------------                                                              
+SUNIL                                                                           
+
+SQL> SELECT * FROM CUSTOMER_02;
+
+CNAME                CITY                                                       
+-------------------- --------------------                                       
+ANIL                 KOLKATA                                                    
+SUNIL                DELHI                                                      
+MEHUL                BARODA                                                     
+MANDAR               PATNA                                                      
+MADHURI              NAGPUR                                                     
+PRAMOD               NAGPUR                                                     
+SANDIP               SURAT                                                      
+SHIVANI              MUMBAI                                                     
+KRANTI               MUMBAI                                                     
+NAREN                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> SELECT * FROM SELECT D.CNAME FROM DEPOSIT_02 D, CUSTOMER_02 C WHERE C.CITY = 'NAGPUR' AND D.CNAME = C.CNAME;
+SELECT * FROM SELECT D.CNAME FROM DEPOSIT_02 D, CUSTOMER_02 C WHERE C.CITY = 'NAGPUR' AND D.CNAME = C.CNAME
+              *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, CUSTOMER_02 C WHERE C.CITY = 'NAGPUR' AND D.CNAME = C.CNAME;
+
+CNAME                                                                           
+------------------                                                              
+MADHURI                                                                         
+PRAMOD                                                                          
+
+SQL> SELECT * FROM BRANCH_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, BRANCH_02 WHERE B.BNAME = D.BNAME AND D.CNAME = 'SUNIL';
+SELECT D.CNAME FROM DEPOSIT_02 D, BRANCH_02 WHERE B.BNAME = D.BNAME AND D.CNAME = 'SUNIL'
+                                                  *
+ERROR at line 1:
+ORA-00904: "B"."BNAME": invalid identifier 
+
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, BRANCH_02 B WHERE B.BNAME = D.BNAME AND D.CNAME = 'SUNIL';
+
+CNAME                                                                           
+------------------                                                              
+SUNIL                                                                           
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, DEPOSIT_02 D2, WHERE D.AMOUNT = D2.MAX(AMOUNT);
+SELECT D.CNAME FROM DEPOSIT_02 D, DEPOSIT_02 D2, WHERE D.AMOUNT = D2.MAX(AMOUNT)
+                                                 *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> SELECT D.CNAME FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = D2.MAX(AMOUNT);
+SELECT D.CNAME FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = D2.MAX(AMOUNT)
+                                                                 *
+ERROR at line 1:
+ORA-00904: "D2"."MAX": invalid identifier 
+
+
+SQL> SELECT D.CNAME, MAX(AMOUNT) M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = M;
+SELECT D.CNAME, MAX(AMOUNT) M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = M
+                                                                                *
+ERROR at line 1:
+ORA-00904: "M": invalid identifier 
+
+
+SQL> SELECT D.CNAME M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = D.MAX(AMOUNT);
+SELECT D.CNAME M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = D.MAX(AMOUNT)
+                                                                   *
+ERROR at line 1:
+ORA-00904: "D"."MAX": invalid identifier 
+
+
+SQL> SELECT D.CNAME M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = MAX(AMOUNT);
+SELECT D.CNAME M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = MAX(AMOUNT)
+                                                                   *
+ERROR at line 1:
+ORA-00934: group function is not allowed here 
+
+
+SQL> SELECT D.CNAME, D2.MAX(AMOUNT) AS M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = M;
+SELECT D.CNAME, D2.MAX(AMOUNT) AS M FROM DEPOSIT_02 D, DEPOSIT_02 D2 WHERE D.AMOUNT = M
+                                                                                      *
+ERROR at line 1:
+ORA-00904: "M": invalid identifier 
+
+
+SQL> SELECT CNAME, FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 );
+SELECT CNAME, FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 )
+              *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> SELECT CNAME FROM DEPOSIT_02 WHERE AMOUNT IN ( SELECT MAX(AMOUNT) FROM DEPOSIT_02 );
+
+CNAME                                                                           
+------------------                                                              
+NAREN                                                                           
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL OFF

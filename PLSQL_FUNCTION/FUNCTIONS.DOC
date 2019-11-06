@@ -1,0 +1,616 @@
+@ E:\HammadDBMS\PLSQL_FUNCTION\func_1.SQL
+
+Function created.
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\func_1_CALL.SQL
+Enter value for n: 4
+old   5: N := &N;
+new   5: N := 4;
+ENTER A NUMBER TO FIND FACTORIAL                                                
+24                                                                              
+
+PL/SQL procedure successfully completed.
+
+SQL> /
+Enter value for n: 5
+old   5: N := &N;
+new   5: N := 5;
+ENTER A NUMBER TO FIND FACTORIAL                                                
+120                                                                             
+
+PL/SQL procedure successfully completed.
+
+SQL> /
+Enter value for n: 5
+old   5: N := &N;
+new   5: N := 5;
+ENTER A NUMBER TO FIND FACTORIAL                                                
+120                                                                             
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\func_1_CALL.SQL
+Enter value for n: 5
+old   4: N := &N;
+new   4: N := 5;
+FACTORIAL OF 5                                                                  
+120                                                                             
+
+PL/SQL procedure successfully completed.
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\func_2.SQL
+Enter value for n: 4
+old  18:    N:= &N;
+new  18:    N:= 4;
+      F := X * RES(X-1);
+               *
+ERROR at line 12:
+ORA-06550: line 12, column 16: 
+PLS-00222: no function with name 'RES' exists in this scope 
+ORA-06550: line 12, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_02.SQL
+SP2-0310: unable to open file "E:\HammadDBMS\PLSQL_FUNCTION\FUNC_02.SQL"
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_02.SQL
+SP2-0310: unable to open file "E:\HammadDBMS\PLSQL_FUNCTION\FUNC_02.SQL"
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\func_2.SQL
+Enter value for n: 4
+old  18:    N:= &N;
+new  18:    N:= 4;
+Factorial 4 is 24                                                               
+
+PL/SQL procedure successfully completed.
+
+SQL> /
+Enter value for n: 5
+old  18:    N:= &N;
+new  18:    N:= 5;
+Factorial 5 is 120                                                              
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_3.SQL
+Enter value for n: 3
+old  25:    N1 := &N;
+new  25:    N1 := 3;
+Enter value for n: 4
+old  26:    N2 := &N;
+new  26:    N2 := 4;
+Enter value for n: 5
+old  27:    N3 := &N;
+new  27:    N3 := 5;
+ADDITION OF FIRST TWO NUMBERS 7                                                 
+ADDITION OF THREE NUMBERS 12                                                    
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 3:
+ORA-06550: line 3, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "CURSOR" when expecting one of the following: 
+:= . ( @ % ; not null range default character 
+
+
+FUNCTION HIGH_02()
+                 *
+ERROR at line 3:
+ORA-06550: line 3, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "CURSOR" when expecting one of the following: 
+:= . ( @ % ; not null range default character 
+
+
+SQL> /
+FUNCTION HIGH_02()
+                 *
+ERROR at line 3:
+ORA-06550: line 3, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "CURSOR" when expecting one of the following: 
+:= . ( @ % ; not null range default character 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> 
+SQL> Z C1%rowtype;
+SP2-0734: unknown command beginning "Z C1%rowty..." - rest of line ignored.
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 6:
+ORA-06550: line 6, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 6:
+ORA-06550: line 6, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 7:
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin case declare exit for goto if loop mod null pragma 
+raise return select update while with <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> << 
+close current delete fetch lock insert open rollback 
+savepoint set sql execute commit forall merge pipe 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 7:
+ORA-06550: line 7, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin case declare exit for goto if loop mod null pragma 
+raise return select update while with <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> << 
+close current delete fetch lock insert open rollback 
+savepoint set sql execute commit forall merge pipe 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> LS-00103: Encountered the symbol "CREATE" when expecting one of the following:
+SP2-0734: unknown command beginning "LS-00103: ..." - rest of line ignored.
+SQL> egin function package pragma procedure subtype type use
+SP2-0734: unknown command beginning "egin funct..." - rest of line ignored.
+SQL> an identifier> <a double-quoted delimited-identifier> form
+SP2-0734: unknown command beginning "an identif..." - rest of line ignored.
+SQL> urrent cursor
+SP2-0734: unknown command beginning "urrent cur..." - rest of line ignored.
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+SQL> CLEAR SCREEN
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+CREATE OR REPLACE FUNCTION HIGH_02()
+*
+ERROR at line 5:
+ORA-06550: line 5, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 20, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 23, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 20, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 23, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 20, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 23, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL> 
+SQL> 
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 6:
+ORA-06550: line 6, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+
+
+SQL> PLS-00103: Encountered the symbol ")" when expecting one of the following:
+SP2-0734: unknown command beginning "PLS-00103:..." - rest of line ignored.
+SQL> <an identifier> <a double-quoted delimited-identifier>
+SP2-0734: unknown command beginning "<an identi..." - rest of line ignored.
+SQL> CLEAR SCREEN
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 6:
+ORA-06550: line 6, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+
+
+SQL> PLS-00103: Encountered the symbol ")" when expecting one of the following:
+SP2-0734: unknown command beginning "PLS-00103:..." - rest of line ignored.
+SQL> <an identifier> <a double-quoted delimited-identifier>
+SP2-0734: unknown command beginning "<an identi..." - rest of line ignored.
+SQL> current@ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+SP2-0734: unknown command beginning "current@ E..." - rest of line ignored.
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 6, column 24: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 21, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 24, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 5: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 22, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 25, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL> 
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 6:
+ORA-06550: line 6, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+ORA-06550: line 22, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 25, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+RES VARCHAR2;
+    *
+ERROR at line 2:
+ORA-06550: line 2, column 5: 
+PLS-00215: String length constraints must be in range (1 .. 32767) 
+ORA-06550: line 7, column 3: 
+PLS-00215: String length constraints must be in range (1 .. 32767) 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+F VARCHAR2;
+  *
+ERROR at line 7:
+ORA-06550: line 7, column 3: 
+PLS-00215: String length constraints must be in range (1 .. 32767) 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+RETURN VARCHAR2(50) AS
+               *
+ERROR at line 6:
+ORA-06550: line 6, column 16: 
+PLS-00103: Encountered the symbol "(" when expecting one of the following: 
+. @ % ; is authid as cluster order using external character 
+deterministic parallel_enable pipelined aggregate 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, from into bulk 
+The symbol "," was substituted for "VARCHAR2" to continue. 
+ORA-06550: line 7, column 15: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+. ( , * % & - + / at mod remainder rem <an identifier> 
+<a double-quoted delimited-identifier> <an exponent (**)> as 
+from into || multiset bulk 
+ORA-06550: line 22, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 25, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable or
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02(A VARCHAR2(50))
+                           *
+ERROR at line 5:
+ORA-06550: line 5, column 28: 
+PLS-00103: Encountered the symbol "(" when expecting one of the following: 
+:= . ) , @ % default character 
+The symbol ":=" was substituted for "(" to continue. 
+ORA-06550: line 6, column 16: 
+PLS-00103: Encountered the symbol "(" when expecting one of the following: 
+. @ % ; is authid as cluster order using external character 
+deterministic parallel_enable pipelined aggregate 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, from into bulk 
+The symbol "," was substituted for "VARCHAR2" to continue. 
+ORA-06550: line 7, column 15: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+. ( , * % & - + / at mod remainder rem <an identifier> 
+<a double-quoted delimited-identifier> <an exponent (**)> as 
+from into || multiset bulk 
+ORA-06550: line 22, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overri
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+FUNCTION HIGH_02()
+                 *
+ERROR at line 5:
+ORA-06550: line 5, column 18: 
+PLS-00103: Encountered the symbol ")" when expecting one of the following: 
+<an identifier> <a double-quoted delimited-identifier> 
+current 
+ORA-06550: line 7, column 3: 
+PLS-00103: Encountered the symbol "VARCHAR2" when expecting one of the 
+following: 
+, into bulk 
+The symbol "," was substituted for "VARCHAR2" to continue. 
+ORA-06550: line 7, column 15: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+. ( , * % & - + / at mod remainder rem <an identifier> 
+<a double-quoted delimited-identifier> <an exponent (**)> as 
+into || multiset bulk 
+ORA-06550: line 22, column 1: 
+PLS-00103: Encountered the symbol "BEGIN" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 25, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL> 
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02( CNAME IN VARCHAR2)
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02( CNAME IN VARCHAR2)
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02( CNAME IN VARCHAR2)
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02( CNAME IN VARCHAR2)
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_FUNCTION\FUNC_4.SQL
+CREATE OR REPLACE FUNCTION HIGH_02( CNAME IN VARCHAR2)
+*
+ERROR at line 3:
+ORA-06550: line 3, column 1: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> SPOOL OFF;
+SQL> @E:\HammadDBMS\PLSQL_FUNCTION\FUNC_7.SQL
+NAME OF THE BRANCH WITH FIFTH HIGHEST AMOUNT : M.G.ROAD                         
+
+PL/SQL procedure successfully completed.
+
+SQL> SPOOL OFF;

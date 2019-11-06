@@ -1,0 +1,243 @@
+create table Parent_02(a number,b number);
+
+Table created.
+
+SQL> ALTER TABLE Parent_02 ADD CONSTRAINT PK_P2 PRIMARY KEY (a);
+
+Table altered.
+
+SQL> DESC PARENT_02
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ A                                         NOT NULL NUMBER
+ B                                                  NUMBER
+
+SQL> CREATE TABLE Child_02(A NUMBER,B NUMBER);
+
+Table created.
+
+SQL> ALTER TABLE Child_02 ADD CONSTRAINT FK_C2 (A) REGERENCES Parent_02 (A);
+ALTER TABLE Child_02 ADD CONSTRAINT FK_C2 (A) REGERENCES Parent_02 (A)
+                                          *
+ERROR at line 1:
+ORA-00904: : invalid identifier 
+
+
+SQL> ALTER TABLE Child_02 ADD CONSTRAINT FK_C2 FOREIGN KEY (A) REFERENCES Parent_02 (A);
+
+Table altered.
+
+SQL> DESC Child_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ A                                                  NUMBER
+ B                                                  NUMBER
+
+SQL> INSERT INTO Parent_02 VALUES (1,2);
+
+1 row created.
+
+SQL> INSERT INTO Parent_02 VALUES(2,4);
+
+1 row created.
+
+SQL> INSERT INTO Child_02 VALUES(1,10);
+
+1 row created.
+
+SQL> INSERT INTO Child_02 VALUES(2,7);
+
+1 row created.
+
+SQL> @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_1.SQL
+
+Trigger created.
+
+SQL> INSERT INTO Parent_02 VALUES(3,6);
+
+1 row created.
+
+SQL> SELECT * FROM Child_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         1         10                                                           
+         2          7                                                           
+
+SQL> SELECT * FROM Parent_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         1          2                                                           
+         2          4                                                           
+         3          6                                                           
+
+SQL> UPDATE Parent_02 SET A =5 WHERE A=1;
+
+1 row updated.
+
+SQL> SELECT * FROM PARENT_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         5          2                                                           
+         2          4                                                           
+         3          6                                                           
+
+SQL> SELECT * FROM CHILD_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         5         10                                                           
+         2          7                                                           
+
+SQL>  @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_2.SQL
+
+Trigger created.
+
+SQL> UPDATE CHILD_02 SET A=1 WHERE A=5;
+UPDATE CHILD_02 SET A=1 WHERE A=5
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.FK_C2) violated - parent key not found 
+
+
+SQL> UPDATE PARENT_02 SET A=1 WHERE A=5;
+UPDATE PARENT_02 SET A=1 WHERE A=5
+       *
+ERROR at line 1:
+ORA-04091: table SYSTEM.PARENT_02 is mutating, trigger/function may not see it 
+ORA-06512: at "SYSTEM.UPDATE_ON_TRIGGER", line 2 
+ORA-04088: error during execution of trigger 'SYSTEM.UPDATE_ON_TRIGGER' 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_2.SQL
+
+Trigger created.
+
+SQL>  @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_1.SQL
+
+Trigger created.
+
+SQL> UPDATE PARENT_02 SET A=5 WHERE A=1;
+
+0 rows updated.
+
+SQL> SELECT * FROM PARENT_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         5          2                                                           
+         2          4                                                           
+         3          6                                                           
+
+SQL> UPDATE PARENT_02 SET A=1 WHERE A-5;
+UPDATE PARENT_02 SET A=1 WHERE A-5
+                                 *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> UPDATE PARENT_02 SET A = 1 WHERE A = 5;
+
+1 row updated.
+
+SQL> SELECT * FROM CHILD_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         1         10                                                           
+         2          7                                                           
+
+SQL> UPDATE CHILD_02 SET A=5 WHERE A=1;
+UPDATE CHILD_02 SET A=5 WHERE A=1
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.FK_C2) violated - parent key not found 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_2.SQL
+
+Trigger created.
+
+SQL> UPDATE CHILD_02 SET A=5 WHERE A=1;
+UPDATE CHILD_02 SET A=5 WHERE A=1
+       *
+ERROR at line 1:
+ORA-04091: table SYSTEM.CHILD_02 is mutating, trigger/function may not see it 
+ORA-06512: at "SYSTEM.UPDATE_ON_TRIGGER", line 2 
+ORA-04088: error during execution of trigger 'SYSTEM.UPDATE_ON_TRIGGER' 
+ORA-06512: at "SYSTEM.UPDATE_ON_TRIGGER_2", line 2 
+ORA-04088: error during execution of trigger 'SYSTEM.UPDATE_ON_TRIGGER_2' 
+
+
+SQL> DROP TRIGGER SYSTEM.UPDATE_ON_TRIGGER
+  2  ;
+
+Trigger dropped.
+
+SQL> SELECT * FROM CHILD_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         1         10                                                           
+         2          7                                                           
+
+SQL> UPDATE CHILD_02 SET A = 5 WHERE A = 1;
+
+1 row updated.
+
+SQL> SELECT * FROM CHILD_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         5         10                                                           
+         2          7                                                           
+
+SQL> SELECT 8 FROM PARENT_02;
+
+         8                                                                      
+----------                                                                      
+         8                                                                      
+         8                                                                      
+         8                                                                      
+
+SQL> SELECT * FROM PARENT_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         5          2                                                           
+         2          4                                                           
+         3          6                                                           
+
+SQL> UPDATE PARENT_02 SET A = 1 WHERE A = 5;
+UPDATE PARENT_02 SET A = 1 WHERE A = 5
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (SYSTEM.FK_C2) violated - child record found 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_TRIGGER\TRIG_PRAC_3.SQL
+
+Trigger created.
+
+SQL> DELTE FROM PARENT_02 WHERE A = 5;
+SP2-0734: unknown command beginning "DELTE FROM..." - rest of line ignored.
+SQL> DELETE FROM PARENT_02 WHERE A = 5;
+
+1 row deleted.
+
+SQL> SELECT * FROM CHILD_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         2          7                                                           
+
+SQL> SELECT * FROM PARENT_02;
+
+         A          B                                                           
+---------- ----------                                                           
+         2          4                                                           
+         3          6                                                           
+
+SQL> SPOOL OFF

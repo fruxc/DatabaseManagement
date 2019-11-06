@@ -1,0 +1,141 @@
+@ e:\hammaddbms\basic_1_3
+SP2-0310: unable to open file "e:\hammaddbms\basic_1_3.sql"
+SQL> /
+Enter value for b: old   7: b:=&b;
+new   7: 
+Enter value for a: old   8: a:=&a;
+new   8: 
+
+PL/SQL procedure successfully completed.
+
+
+SQL> @ e:\hammaddbms\basic1_3.sql
+ 19  /
+Enter value for b: 4
+old   7: b:=&b;
+new   7: b:=4;
+Enter value for a: 5
+old   8: a:=&a;
+new   8: a:=5;
+Enter value for c: 6
+old   9: c:=&c;
+new   9: c:=6;
+Sum of two numbers =                                                            
+END;
+   *
+ERROR at line 18:
+ORA-06550: line 18, column 4: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+if 
+
+
+SQL> @ e:\hammaddbms\basic1_3.sql
+ 19  /
+Enter value for b: 2
+old   7: b:=&b;
+new   7: b:=2;
+Enter value for a: 3
+old   8: a:=&a;
+new   8: a:=3;
+Enter value for c: 4
+old   9: c:=&c;
+new   9: c:=4;
+ELSE c>a AND c>b THEN
+      *
+ERROR at line 15:
+ORA-06550: line 15, column 7: 
+PLS-00103: Encountered the symbol ">" when expecting one of the following: 
+:= . ( @ % ; 
+
+
+SQL> @ e:\hammaddbms\basic1_3.sql
+ 19  /
+Enter value for b: 2
+old   7: b:=&b;
+new   7: b:=2;
+Enter value for a: 3
+old   8: a:=&a;
+new   8: a:=3;
+Enter value for c: 4
+old   9: c:=&c;
+new   9: c:=4;
+END;
+   *
+ERROR at line 18:
+ORA-06550: line 18, column 4: 
+PLS-00103: Encountered the symbol ";" when expecting one of the following: 
+if 
+
+
+SQL>  DBMS_OUTPUT.put_line('C is greatest!');
+SP2-0734: unknown command beginning "DBMS_OUTPU..." - rest of line ignored.
+SQL>  DBMS_OUTPUT.put_line('C is greatest!');
+SP2-0734: unknown command beginning "DBMS_OUTPU..." - rest of line ignored.
+SQL>  @ e:\hammaddbms\basic1_3.sql
+ 21  /
+Enter value for a: 2
+old   7: a:=&a;
+new   7: a:=2;
+Enter value for b: 3
+old   8: b:=&b;
+new   8: b:=3;
+Enter value for c: 4
+old   9: c:=&c;
+new   9: c:=4;
+C is greatest!                                                                  
+
+PL/SQL procedure successfully completed.
+
+SQL>  @ e:\hammaddbms\basic1_2.sql
+ 13  /
+Enter value for b: 4
+old   7: b:=&b;
+new   7: b:=4;
+Enter value for a: 5
+old   8: a:=&a;
+new   8: a:=5;
+Sum of two numbers =                                                            
+9                                                                               
+
+PL/SQL procedure successfully completed.
+
+SQL>  @ e:\hammaddbms\basic1_1.sql
+ 12  /
+Enter value for name: Hammad
+old   6: word:='&name';
+new   6: word:='Hammad';
+Enter value for number: 02
+old   7: a:=&number;
+new   7: a:=02;
+Hammad                                                                          
+2                                                                               
+
+PL/SQL procedure successfully completed.
+
+SQL>  DBMS_OUTPUT.put_line('ALL ARE EQUAL!');
+SP2-0734: unknown command beginning "DBMS_OUTPU..." - rest of line ignored.
+SQL> @ e:\hammaddbms\basic1_4.sql
+ 15  /
+	DBMS_OUTPUT.put_line('Sum of first five numbers ='||s);
+	           *
+ERROR at line 12:
+ORA-06550: line 12, column 13: 
+PLS-00103: Encountered the symbol "." when expecting one of the following: 
+; 
+ORA-06550: line 14, column 1: 
+PLS-00103: Encountered the symbol "END"  
+
+
+SQL> @ e:\hammaddbms\basic1_4.sql
+ 15  /
+Sum of first five numbers =15                                                   
+
+PL/SQL procedure successfully completed.
+
+SQL> @ e:\hammaddbms\basic1_5.sql
+  8  /
+M.G.ROAD                                                                        
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off

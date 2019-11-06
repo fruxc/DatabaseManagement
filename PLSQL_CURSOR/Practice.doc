@@ -1,0 +1,489 @@
+CREATE TABLE STUDENT_P_02 (SID NUMBER, SNAME VARCHAR2, MARKS NUMBER);
+CREATE TABLE STUDENT_P_02 (SID NUMBER, SNAME VARCHAR2, MARKS NUMBER)
+                                                     *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> CREATE TABLE STUDENT_P_02 (SID NUMBER, SNAME VARCHAR2(25), MARKS NUMBER);
+
+Table created.
+
+SQL> DESC STUDENT_P_02;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                                NUMBER
+ SNAME                                              VARCHAR2(25)
+ MARKS                                              NUMBER
+
+SQL> CREATE TABLE TEMP_02 (SID NUMBER, SNAME VARCHAR2(25), MARKS NUMBER);
+
+Table created.
+
+SQL> INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS);
+Enter value for sid: 1
+Enter value for sname: NISHITA
+Enter value for marks: 98
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(1,'NISHITA',98)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 2
+Enter value for sname: HAMMAD
+Enter value for marks: 99
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(2,'HAMMAD',99)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 3
+Enter value for sname: MAULIKA
+Enter value for marks: 97
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(3,'MAULIKA',97)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 4
+Enter value for sname: DIKSHA
+Enter value for marks: 100
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(4,'DIKSHA',100)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 5
+Enter value for sname: RIYA
+Enter value for marks: 98
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(5,'RIYA',98)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 6
+Enter value for sname: SIDDHESH
+Enter value for marks: 89
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(6,'SIDDHESH',89)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 7
+Enter value for sname: PREETI
+Enter value for marks: 90
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(7,'PREETI',90)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 8
+Enter value for sname: DIVYA
+Enter value for marks: 92
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(8,'DIVYA',92)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 9
+Enter value for sname: MRIDUL
+Enter value for marks: 95
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(9,'MRIDUL',95)
+
+1 row created.
+
+SQL> /
+Enter value for sid: 10
+Enter value for sname: ASMA
+Enter value for marks: 90
+old   1: INSERT INTO STUDENT_P_02 VALUES(&SID,'&SNAME',&MARKS)
+new   1: INSERT INTO STUDENT_P_02 VALUES(10,'ASMA',90)
+
+1 row created.
+
+SQL> SELECT * FROM STUDENT_P_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         1 NISHITA                           98                                 
+         2 HAMMAD                            99                                 
+         3 MAULIKA                           97                                 
+         4 DIKSHA                           100                                 
+         5 RIYA                              98                                 
+         6 SIDDHESH                          89                                 
+         7 PREETI                            90                                 
+         8 DIVYA                             92                                 
+         9 MRIDUL                            95                                 
+        10 ASMA                              90                                 
+
+10 rows selected.
+
+SQL> UPDATE STUDENT_P_02 SET MARKS = 96 WHERE SNAME = 'RIYA';
+
+1 row updated.
+
+SQL> SELECT * FROM STUDENT_P_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         1 NISHITA                           98                                 
+         2 HAMMAD                            99                                 
+         3 MAULIKA                           97                                 
+         4 DIKSHA                           100                                 
+         5 RIYA                              96                                 
+         6 SIDDHESH                          89                                 
+         7 PREETI                            90                                 
+         8 DIVYA                             92                                 
+         9 MRIDUL                            95                                 
+        10 ASMA                              90                                 
+
+10 rows selected.
+
+SQL> UPDATE STUDENT_P_02 SET MARKS = 93 WHERE SNAME = 'PREETI';
+
+1 row updated.
+
+SQL> SELECT * FROM STUDENT_P_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         1 NISHITA                           98                                 
+         2 HAMMAD                            99                                 
+         3 MAULIKA                           97                                 
+         4 DIKSHA                           100                                 
+         5 RIYA                              96                                 
+         6 SIDDHESH                          89                                 
+         7 PREETI                            93                                 
+         8 DIVYA                             92                                 
+         9 MRIDUL                            95                                 
+        10 ASMA                              90                                 
+
+10 rows selected.
+
+SQL> 
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+c VARCHAR2;
+  *
+ERROR at line 4:
+ORA-06550: line 4, column 3: 
+PLS-00215: String length constraints must be in range (1 .. 32767) 
+
+
+SQL> /
+c VARCHAR2;
+  *
+ERROR at line 4:
+ORA-06550: line 4, column 3: 
+PLS-00215: String length constraints must be in range (1 .. 32767) 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM TEMP_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         4 z.SNAME                          100                                 
+         2 z.SNAME                           99                                 
+         1 z.SNAME                           98                                 
+         3 z.SNAME                           97                                 
+         5 z.SNAME                           96                                 
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM TEMP_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         4 z.SNAME                          100                                 
+         2 z.SNAME                           99                                 
+         1 z.SNAME                           98                                 
+         3 z.SNAME                           97                                 
+         5 z.SNAME                           96                                 
+         4 DIKSHA                           100                                 
+         2 HAMMAD                            99                                 
+         1 NISHITA                           98                                 
+         3 MAULIKA                           97                                 
+         5 RIYA                              96                                 
+
+10 rows selected.
+
+SQL> DROP TABLE TEMP_02;
+
+Table dropped.
+
+SQL> CREATE TABLE TEMP_02 (SID NUMBER, SNAME VARCHAR2(25), MARKS NUMBER);
+
+Table created.
+
+SQL>  @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM TEMP_02;
+
+       SID SNAME                          MARKS                                 
+---------- ------------------------- ----------                                 
+         4 DIKSHA                           100                                 
+         2 HAMMAD                            99                                 
+         1 NISHITA                           98                                 
+         3 MAULIKA                           97                                 
+         5 RIYA                              96                                 
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+    A = z.AMOUNT*(120/100);
+      *
+ERROR at line 10:
+ORA-06550: line 10, column 7: 
+PLS-00103: Encountered the symbol "=" when expecting one of the following: 
+:= . ( @ % ; 
+ORA-06550: line 11, column 5: 
+PLS-00103: Encountered the symbol "INSERT"  
+ORA-06550: line 12, column 5: 
+PLS-00103: Encountered the symbol "FETCH" when expecting one of the following: 
+, ; return returning 
+ORA-06550: line 14, column 1: 
+PLS-00103: Encountered the symbol "CLOSE" when expecting one of the following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+ORA-06550: line 15, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+    fetch c1 into z;
+    *
+ERROR at line 12:
+ORA-06550: line 12, column 5: 
+PL/SQL: ORA-00933: SQL command not properly ended 
+ORA-06550: line 11, column 5: 
+PL/SQL: SQL Statement ignored 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL>  @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SELECT * FROM BRANCH_02;
+
+BNAME                CITY                                                       
+-------------------- --------------------                                       
+VRCE                 NAGPUR                                                     
+AJNI                 NAGPUR                                                     
+KAROLBAGH            DELHI                                                      
+CHANDNI              DELHI                                                      
+DHARAMPETH           NAGPUR                                                     
+M.G.ROAD             BANGLORE                                                   
+ANDHERI              MUMBAI                                                     
+VIRAR                MUMBAI                                                     
+NEHRU PLACE          DELHI                                                      
+POWAI                MUMBAI                                                     
+
+10 rows selected.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_1.SQL
+SELECT * FROM TEMP_02;
+*
+ERROR at line 15:
+ORA-06550: line 15, column 1: 
+PLS-00428: an INTO clause is expected in this SELECT statement 
+
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+DECLARE
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("SYSTEM"."DEPOSIT_02"."AC_NO") 
+ORA-06512: at line 11 
+
+
+SQL> SELECT@ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+  2  ;
+SELECT@ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+      *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1200 01-MAR-95                
+101   SUNIL              AJNI                     6000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> ROLLBACK;
+
+Rollback complete.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1000 01-MAR-95                
+101   SUNIL              AJNI                     5000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL>  @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+end loop;
+    *
+ERROR at line 18:
+ORA-06550: line 18, column 5: 
+PLS-00103: Encountered the symbol "LOOP" when expecting one of the following: 
+if 
+ORA-06550: line 20, column 4: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+end not pragma final instantiable order overriding static 
+member constructor map 
+
+
+SQL>  @ E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1120 01-MAR-95                
+101   SUNIL              AJNI                     6000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> ROLLBACK;
+
+Rollback complete.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> EXIT
+SQL> SPOOL OFF
+SQL> @E:\HammadDBMS\PLSQL_CURSOR\CURSOR_PRAC_2.SQL
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM DEPOSIT_02;
+
+AC_NO CNAME              BNAME                  AMOUNT ADATE                    
+----- ------------------ ------------------ ---------- ---------                
+100   ANIL               VRCE                     1120 01-MAR-95                
+101   SUNIL              AJNI                     6000 04-JAN-96                
+102   MEHUL              KAROLBAGH                3500 17-NOV-95                
+104   MADHURI            CHANDNI                  1200 17-DEC-95                
+105   PRAMOD             M.G.ROAD                 3000 27-MAR-96                
+106   SANDIP             ANDHERI                  2000 31-MAR-96                
+107   SHIVANI            VIRAR                    1000 05-SEP-95                
+108   KRANTI             NEHRU PLACE              5000 02-JUL-95                
+109   NAREN              POWAI                    7000 10-AUG-95                
+
+9 rows selected.
+
+SQL> SPOOL OFF;

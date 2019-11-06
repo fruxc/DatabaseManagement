@@ -1,0 +1,3003 @@
+   
+
+
+     "address" : {
+                "building" : "1007",
+                "coord" : [
+                        -73.856077,
+                        40.848447
+                ],
+                "street" : "Morris Park Ave",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Bakery",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2013-09-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2013-01-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-11-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2011-03-10T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 14
+                }
+        ],
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c32"),
+        "address" : {
+                "building" : "7715",
+                "coord" : [
+                        -73.9973325,
+                        40.61174889999999
+                ],
+                "street" : "18 Avenue",
+                "zipcode" : "11214"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-04-16T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2013-04-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2012-04-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2011-12-16T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                }
+        ],
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c33"),
+        "address" : {
+                "building" : "1269",
+                "coord" : [
+                        -73.871194,
+                        40.6730975
+                ],
+                "street" : "Sutter Avenue",
+                "zipcode" : "11208"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "Chinese",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-09-16T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 21
+                },
+                {
+                        "date" : ISODate("2013-08-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2013-04-02T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 56
+                },
+                {
+                        "date" : ISODate("2012-08-15T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 27
+                },
+                {
+                        "date" : ISODate("2012-03-28T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 27
+                }
+        ],
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c34"),
+        "address" : {
+                "building" : "1839",
+                "coord" : [
+                        -73.9482609,
+                        40.6408271
+                ],
+                "street" : "Nostrand Avenue",
+                "zipcode" : "11226"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-07-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-07-10T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2012-07-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2012-02-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                }
+        ],
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c35"),
+        "address" : {
+                "building" : "1",
+                "coord" : [
+                        -73.96926909999999,
+                        40.7685235
+                ],
+                "street" : "East   66 Street",
+                "zipcode" : "10065"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-07T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                },
+                {
+                        "date" : ISODate("2013-05-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2012-04-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2011-12-27T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 0
+                }
+        ],
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c36"),
+        "address" : {
+                "building" : "203",
+                "coord" : [
+                        -73.97822040000001,
+                        40.6435254
+                ],
+                "street" : "Church Avenue",
+                "zipcode" : "11218"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-02-10T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2013-01-02T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-01-09T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                },
+                {
+                        "date" : ISODate("2011-11-07T00:00:00Z"),
+                        "grade" : "P",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2011-07-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c37"),
+        "address" : {
+                "building" : "705",
+                "coord" : [
+                        -73.9653967,
+                        40.6064339
+                ],
+                "street" : "Kings Highway",
+                "zipcode" : "11223"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "Jewish/Kosher",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-11-10T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-10-10T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-10-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2012-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2011-12-30T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                }
+        ],
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c38"),
+        "address" : {
+                "building" : "265-15",
+                "coord" : [
+                        -73.7032601,
+                        40.7386417
+                ],
+                "street" : "Hillside Avenue",
+                "zipcode" : "11004"
+        },
+        "borough" : "Queens",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-10-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-09-18T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-09-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c39"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-06-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2012-06-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                }
+        ],
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3a"),
+        "address" : {
+                "building" : "129-08",
+                "coord" : [
+                        -73.839297,
+                        40.78147
+                ],
+                "street" : "20 Avenue",
+                "zipcode" : "11356"
+        },
+        "borough" : "Queens",
+        "cuisine" : "Delicatessen",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-16T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-08-27T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-09-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2011-09-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                }
+        ],
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3b"),
+        "address" : {
+                "building" : "6909",
+                "coord" : [
+                        -74.0259567,
+                        40.6353674
+                ],
+                "street" : "3 Avenue",
+                "zipcode" : "11209"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2014-03-05T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                },
+                {
+                        "date" : ISODate("2013-01-10T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                }
+        ],
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3c"),
+        "address" : {
+                "building" : "284",
+                "coord" : [
+                        -73.9829239,
+                        40.6580753
+                ],
+                "street" : "Prospect Park West",
+                "zipcode" : "11215"
+        },
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-11-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-11-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2012-12-05T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-05-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                }
+        ],
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+>
+> db.Restaurant_Data.find({},{"restaurant_id":1,"name":1,"borough":1,"cuisine":1}).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c29"),
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "Riviera Caterer",
+        "restaurant_id" : "40356018"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2a"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Hamburgers",
+        "name" : "Wendy'S",
+        "restaurant_id" : "30112340"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2b"),
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2c"),
+        "borough" : "Queens",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Tov Kosher Kitchen",
+        "restaurant_id" : "40356068"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2d"),
+        "borough" : "Queens",
+        "cuisine" : "American ",
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2e"),
+        "borough" : "Staten Island",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Kosher Island",
+        "restaurant_id" : "40356442"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c2f"),
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "Regina Caterers",
+        "restaurant_id" : "40356649"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c30"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c31"),
+        "borough" : "Bronx",
+        "cuisine" : "Bakery",
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c32"),
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c33"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Chinese",
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c34"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c35"),
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c36"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c37"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c38"),
+        "borough" : "Queens",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c39"),
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3a"),
+        "borough" : "Queens",
+        "cuisine" : "Delicatessen",
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3b"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3c"),
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+> it
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3d"),
+        "borough" : "Manhattan",
+        "cuisine" : "Delicatessen",
+        "name" : "Bully'S Deli",
+        "restaurant_id" : "40361708"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3e"),
+        "borough" : "Queens",
+        "cuisine" : "Delicatessen",
+        "name" : "Steve Chu'S Deli & Grocery",
+        "restaurant_id" : "40361998"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c3f"),
+        "borough" : "Manhattan",
+        "cuisine" : "Chicken",
+        "name" : "Harriet'S Kitchen",
+        "restaurant_id" : "40362098"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c40"),
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "P & S Deli Grocery",
+        "restaurant_id" : "40362264"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c41"),
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Angelika Film Center",
+        "restaurant_id" : "40362274"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c42"),
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Glorious Food",
+        "restaurant_id" : "40361521"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c43"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Caribbean",
+        "name" : "Shashemene Int'L Restaura",
+        "restaurant_id" : "40362869"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c44"),
+        "borough" : "Manhattan",
+        "cuisine" : "Turkish",
+        "name" : "The Country Cafe",
+        "restaurant_id" : "40362715"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c45"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Hamburgers",
+        "name" : "White Castle",
+        "restaurant_id" : "40362344"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c46"),
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Downtown Deli",
+        "restaurant_id" : "40363021"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c47"),
+        "borough" : "Bronx",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40363093"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c48"),
+        "borough" : "Brooklyn",
+        "cuisine" : "Donuts",
+        "name" : "Dunkin' Donuts",
+        "restaurant_id" : "40363098"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c49"),
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "Mejlander & Mulgannon",
+        "restaurant_id" : "40363117"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4a"),
+        "borough" : "Manhattan",
+        "cuisine" : "Bakery",
+        "name" : "Olive'S",
+        "restaurant_id" : "40363151"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4b"),
+        "borough" : "Bronx",
+        "cuisine" : "Chinese",
+        "name" : "Happy Garden",
+        "restaurant_id" : "40363289"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4c"),
+        "borough" : "Queens",
+        "cuisine" : "Chinese",
+        "name" : "Ho Mei Restaurant",
+        "restaurant_id" : "40362432"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4d"),
+        "borough" : "Queens",
+        "cuisine" : "Delicatessen",
+        "name" : "Tony'S Deli",
+        "restaurant_id" : "40363333"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4e"),
+        "borough" : "Manhattan",
+        "cuisine" : "Sandwiches/Salads/Mixed Buffet",
+        "name" : "Lexler Deli",
+        "restaurant_id" : "40363426"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4f"),
+        "borough" : "Staten Island",
+        "cuisine" : "Delicatessen",
+        "name" : "Bagels N Buns",
+        "restaurant_id" : "40363427"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c50"),
+        "borough" : "Queens",
+        "cuisine" : "Bagels/Pretzels",
+        "name" : "Hot Bagels",
+        "restaurant_id" : "40363565"
+}
+Type "it" for more
+> db.Restaurant_Data.find({},{"restaurant_id":1,"name":1,"borough":1,"cuisine":1,"_id":0}).pretty()
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "Riviera Caterer",
+        "restaurant_id" : "40356018"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Hamburgers",
+        "name" : "Wendy'S",
+        "restaurant_id" : "30112340"
+}
+{
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Tov Kosher Kitchen",
+        "restaurant_id" : "40356068"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "American ",
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "borough" : "Staten Island",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Kosher Island",
+        "restaurant_id" : "40356442"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "Regina Caterers",
+        "restaurant_id" : "40356649"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "borough" : "Bronx",
+        "cuisine" : "Bakery",
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Chinese",
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "Delicatessen",
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "American ",
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+> db.Restaurant_Data.find({},{"restaurant_id":1,"name":1,"borough":1,"zipcode":1,"_id":0}).pretty()
+{
+        "borough" : "Brooklyn",
+        "name" : "Riviera Caterer",
+        "restaurant_id" : "40356018"
+}
+{ "borough" : "Brooklyn", "name" : "Wendy'S", "restaurant_id" : "30112340" }
+{
+        "borough" : "Manhattan",
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "borough" : "Queens",
+        "name" : "Tov Kosher Kitchen",
+        "restaurant_id" : "40356068"
+}
+{
+        "borough" : "Queens",
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "borough" : "Staten Island",
+        "name" : "Kosher Island",
+        "restaurant_id" : "40356442"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Regina Caterers",
+        "restaurant_id" : "40356649"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "borough" : "Bronx",
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "borough" : "Manhattan",
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "borough" : "Queens",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{ "borough" : "Bronx", "name" : "Wild Asia", "restaurant_id" : "40357217" }
+{
+        "borough" : "Queens",
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+> db.Restaurant_Data.find({},{"restaurant_id":1,"name":1,"borough":1,"zipcode":1,"_id":0}).pretty()
+{
+        "borough" : "Brooklyn",
+        "name" : "Riviera Caterer",
+        "restaurant_id" : "40356018"
+}
+{ "borough" : "Brooklyn", "name" : "Wendy'S", "restaurant_id" : "30112340" }
+{
+        "borough" : "Manhattan",
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "borough" : "Queens",
+        "name" : "Tov Kosher Kitchen",
+        "restaurant_id" : "40356068"
+}
+{
+        "borough" : "Queens",
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "borough" : "Staten Island",
+        "name" : "Kosher Island",
+        "restaurant_id" : "40356442"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Regina Caterers",
+        "restaurant_id" : "40356649"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "borough" : "Bronx",
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "borough" : "Manhattan",
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "borough" : "Queens",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{ "borough" : "Bronx", "name" : "Wild Asia", "restaurant_id" : "40357217" }
+{
+        "borough" : "Queens",
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "borough" : "Brooklyn",
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+> db.Restaurant_Data.find({},{"restaurant_id":1,"name":1,"borough":1,"address.zipcode":1,"_id":0}).pretty()
+{
+        "address" : {
+                "zipcode" : "11224"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Riviera Caterer",
+        "restaurant_id" : "40356018"
+}
+{
+        "address" : {
+                "zipcode" : "11225"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Wendy'S",
+        "restaurant_id" : "30112340"
+}
+{
+        "address" : {
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "address" : {
+                "zipcode" : "11374"
+        },
+        "borough" : "Queens",
+        "name" : "Tov Kosher Kitchen",
+        "restaurant_id" : "40356068"
+}
+{
+        "address" : {
+                "zipcode" : "11369"
+        },
+        "borough" : "Queens",
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "address" : {
+                "zipcode" : "10314"
+        },
+        "borough" : "Staten Island",
+        "name" : "Kosher Island",
+        "restaurant_id" : "40356442"
+}
+{
+        "address" : {
+                "zipcode" : "11219"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Regina Caterers",
+        "restaurant_id" : "40356649"
+}
+{
+        "address" : {
+                "zipcode" : "11234"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "address" : {
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "address" : {
+                "zipcode" : "11214"
+        },
+        "borough" : "Brooklyn",
+        "name" : "C & C Catering Service",
+        "restaurant_id" : "40357437"
+}
+{
+        "address" : {
+                "zipcode" : "11208"
+        },
+        "borough" : "Brooklyn",
+        "name" : "May May Kitchen",
+        "restaurant_id" : "40358429"
+}
+{
+        "address" : {
+                "zipcode" : "11226"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Taste The Tropics Ice Cream",
+        "restaurant_id" : "40356731"
+}
+{
+        "address" : {
+                "zipcode" : "10065"
+        },
+        "borough" : "Manhattan",
+        "name" : "1 East 66Th Street Kitchen",
+        "restaurant_id" : "40359480"
+}
+{
+        "address" : {
+                "zipcode" : "11218"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40360076"
+}
+{
+        "address" : {
+                "zipcode" : "11223"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Seuda Foods",
+        "restaurant_id" : "40360045"
+}
+{
+        "address" : {
+                "zipcode" : "11004"
+        },
+        "borough" : "Queens",
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40361322"
+}
+{
+        "address" : {
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "address" : {
+                "zipcode" : "11356"
+        },
+        "borough" : "Queens",
+        "name" : "Sal'S Deli",
+        "restaurant_id" : "40361618"
+}
+{
+        "address" : {
+                "zipcode" : "11209"
+        },
+        "borough" : "Brooklyn",
+        "name" : "Nordic Delicacies",
+        "restaurant_id" : "40361390"
+}
+{
+        "address" : {
+                "zipcode" : "11215"
+        },
+        "borough" : "Brooklyn",
+        "name" : "The Movable Feast",
+        "restaurant_id" : "40361606"
+}
+Type "it" for more
+> db.Restaurant_Data.find({},{"borough":"Bronx"}).pretty()
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c29"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2a"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2b"), "borough" : "Manhattan" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2c"), "borough" : "Queens" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2d"), "borough" : "Queens" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2e"), "borough" : "Staten Island" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c2f"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c30"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c31"), "borough" : "Bronx" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c32"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c33"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c34"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c35"), "borough" : "Manhattan" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c36"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c37"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c38"), "borough" : "Queens" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c39"), "borough" : "Bronx" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c3a"), "borough" : "Queens" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c3b"), "borough" : "Brooklyn" }
+{ "_id" : ObjectId("5d96e12f6b51f2ede44c2c3c"), "borough" : "Brooklyn" }
+Type "it" for more
+> db.Restaurant_Data.find({"borough":"Bronx"}).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c31"),
+        "address" : {
+                "building" : "1007",
+                "coord" : [
+                        -73.856077,
+                        40.848447
+                ],
+                "street" : "Morris Park Ave",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Bakery",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2013-09-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2013-01-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-11-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2011-03-10T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 14
+                }
+        ],
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c39"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-06-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2012-06-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                }
+        ],
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c47"),
+        "address" : {
+                "building" : "1006",
+                "coord" : [
+                        -73.84856870000002,
+                        40.8903781
+                ],
+                "street" : "East 233 Street",
+                "zipcode" : "10466"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-04-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-09-05T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-02-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-07-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-07-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                }
+        ],
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40363093"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4b"),
+        "address" : {
+                "building" : "1236",
+                "coord" : [
+                        -73.8893654,
+                        40.81376179999999
+                ],
+                "street" : "238 Spofford Ave",
+                "zipcode" : "10474"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Chinese",
+        "grades" : [
+                {
+                        "date" : ISODate("2013-12-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-01-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-06-12T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 15
+                }
+        ],
+        "name" : "Happy Garden",
+        "restaurant_id" : "40363289"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c5d"),
+        "address" : {
+                "building" : "277",
+                "coord" : [
+                        -73.8941893,
+                        40.8634684
+                ],
+                "street" : "East Kingsbridge Road",
+                "zipcode" : "10458"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Chinese",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-09-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-03-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-08-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-08-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Happy Garden",
+        "restaurant_id" : "40364296"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c65"),
+        "address" : {
+                "building" : "658",
+                "coord" : [
+                        -73.81363999999999,
+                        40.82941100000001
+                ],
+                "street" : "Clarence Ave",
+                "zipcode" : "10465"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-06-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2012-07-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                }
+        ],
+        "name" : "Manhem Club",
+        "restaurant_id" : "40364363"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c7e"),
+        "address" : {
+                "building" : "2222",
+                "coord" : [
+                        -73.84971759999999,
+                        40.8304811
+                ],
+                "street" : "Haviland Avenue",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-12-18T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2014-05-01T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 17
+                },
+                {
+                        "date" : ISODate("2013-03-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2012-09-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-02-08T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                }
+        ],
+        "name" : "The New Starling Athletic Club Of The Bronx",
+        "restaurant_id" : "40364956"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c95"),
+        "address" : {
+                "building" : "72",
+                "coord" : [
+                        -73.92506,
+                        40.8275556
+                ],
+                "street" : "East  161 Street",
+                "zipcode" : "10451"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-04-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-11-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2013-07-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-12-31T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 15
+                },
+                {
+                        "date" : ISODate("2012-05-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-01-09T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-08-15T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 37
+                }
+        ],
+        "name" : "Yankee Tavern",
+        "restaurant_id" : "40365499"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2ca7"),
+        "address" : {
+                "building" : "331",
+                "coord" : [
+                        -73.87786539999999,
+                        40.8724377
+                ],
+                "street" : "East  204 Street",
+                "zipcode" : "10467"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2014-03-26T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 23
+                },
+                {
+                        "date" : ISODate("2013-09-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-12-18T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 27
+                },
+                {
+                        "date" : ISODate("2011-10-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Mcdwyers Pub",
+        "restaurant_id" : "40365893"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cc0"),
+        "address" : {
+                "building" : "5820",
+                "coord" : [
+                        -73.9002615,
+                        40.885186
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10463"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-02-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2013-10-09T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                },
+                {
+                        "date" : ISODate("2013-05-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-11-20T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 18
+                },
+                {
+                        "date" : ISODate("2011-10-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-06-22T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 35
+                }
+        ],
+        "name" : "The Punch Bowl",
+        "restaurant_id" : "40366497"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2ccc"),
+        "address" : {
+                "building" : "21",
+                "coord" : [
+                        -73.9168424,
+                        40.8401362
+                ],
+                "street" : "East  170 Street",
+                "zipcode" : "10452"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-12-16T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 22
+                },
+                {
+                        "date" : ISODate("2014-08-12T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 22
+                },
+                {
+                        "date" : ISODate("2013-08-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2012-08-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-02-13T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 16
+                }
+        ],
+        "name" : "Munchtime",
+        "restaurant_id" : "40366748"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cd2"),
+        "address" : {
+                "building" : "1191",
+                "coord" : [
+                        -73.8513114,
+                        40.8316981
+                ],
+                "street" : "Castle Hill Avenue",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Café/Coffee/Tea",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-07-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-07-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-02-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2012-08-14T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 14
+                },
+                {
+                        "date" : ISODate("2011-08-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                }
+        ],
+        "name" : "Lulu'S Coffee Shop",
+        "restaurant_id" : "40366938"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cd4"),
+        "address" : {
+                "building" : "4340",
+                "coord" : [
+                        -73.8194559,
+                        40.8899176
+                ],
+                "street" : "Boston Road",
+                "zipcode" : "10475"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Pancakes/Waffles",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-09-22T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-05-16T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-10-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                },
+                {
+                        "date" : ISODate("2013-06-05T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 24
+                },
+                {
+                        "date" : ISODate("2012-05-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-01-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                }
+        ],
+        "name" : "Ihop",
+        "restaurant_id" : "40366833"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cd9"),
+        "address" : {
+                "building" : "2894",
+                "coord" : [
+                        -73.815175,
+                        40.8137649
+                ],
+                "street" : "Schurz Ave",
+                "zipcode" : "10465"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-10-31T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 18
+                },
+                {
+                        "date" : ISODate("2014-02-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2013-06-07T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2012-05-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                }
+        ],
+        "name" : "Marina Delray",
+        "restaurant_id" : "40367161"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cfc"),
+        "address" : {
+                "building" : "4280",
+                "coord" : [
+                        -73.86697,
+                        40.89794699999999
+                ],
+                "street" : "Katonah Ave",
+                "zipcode" : "10470"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Not Listed/Not Applicable",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-06-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2013-06-07T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2012-06-27T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2011-07-13T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                }
+        ],
+        "name" : "The Lark'S Nest",
+        "restaurant_id" : "40367946"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cff"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Café/Coffee/Tea",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-05-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-06-18T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                }
+        ],
+        "name" : "Terrace Cafe",
+        "restaurant_id" : "40368018"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d00"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "African",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-06-01T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2012-06-12T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 0
+                },
+                {
+                        "date" : ISODate("2011-06-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 0
+                }
+        ],
+        "name" : "African Terrace",
+        "restaurant_id" : "40368021"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d01"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2013-05-22T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2012-05-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2011-06-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                }
+        ],
+        "name" : "Cool Zone",
+        "restaurant_id" : "40368022"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d02"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-05-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-06-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2011-06-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 0
+                }
+        ],
+        "name" : "Beaver Pond",
+        "restaurant_id" : "40368025"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d03"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2013-05-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                },
+                {
+                        "date" : ISODate("2012-06-18T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2011-06-07T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                }
+        ],
+        "name" : "African Market (Baboon Cafe)",
+        "restaurant_id" : "40368026"
+}
+Type "it" for more
+> db.Restaurant_Data.find({"borough":"Bronx"}).limit(5).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c31"),
+        "address" : {
+                "building" : "1007",
+                "coord" : [
+                        -73.856077,
+                        40.848447
+                ],
+                "street" : "Morris Park Ave",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Bakery",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2013-09-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2013-01-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-11-23T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2011-03-10T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 14
+                }
+        ],
+        "name" : "Morris Park Bake Shop",
+        "restaurant_id" : "30075445"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c39"),
+        "address" : {
+                "building" : "2300",
+                "coord" : [
+                        -73.8786113,
+                        40.8502883
+                ],
+                "street" : "Southern Boulevard",
+                "zipcode" : "10460"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-05-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-06-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2012-06-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 3
+                }
+        ],
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c47"),
+        "address" : {
+                "building" : "1006",
+                "coord" : [
+                        -73.84856870000002,
+                        40.8903781
+                ],
+                "street" : "East 233 Street",
+                "zipcode" : "10466"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-04-24T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-09-05T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-02-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-07-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-07-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                }
+        ],
+        "name" : "Carvel Ice Cream",
+        "restaurant_id" : "40363093"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c4b"),
+        "address" : {
+                "building" : "1236",
+                "coord" : [
+                        -73.8893654,
+                        40.81376179999999
+                ],
+                "street" : "238 Spofford Ave",
+                "zipcode" : "10474"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Chinese",
+        "grades" : [
+                {
+                        "date" : ISODate("2013-12-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-01-08T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-06-12T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 15
+                }
+        ],
+        "name" : "Happy Garden",
+        "restaurant_id" : "40363289"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c5d"),
+        "address" : {
+                "building" : "277",
+                "coord" : [
+                        -73.8941893,
+                        40.8634684
+                ],
+                "street" : "East Kingsbridge Road",
+                "zipcode" : "10458"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Chinese",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-09-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2013-03-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-08-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-08-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Happy Garden",
+        "restaurant_id" : "40364296"
+}
+> db.Restaurant_Data.find({"borough":"Bronx"}).skip(5).limit(5).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c65"),
+        "address" : {
+                "building" : "658",
+                "coord" : [
+                        -73.81363999999999,
+                        40.82941100000001
+                ],
+                "street" : "Clarence Ave",
+                "zipcode" : "10465"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-06-21T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2012-07-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                }
+        ],
+        "name" : "Manhem Club",
+        "restaurant_id" : "40364363"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c7e"),
+        "address" : {
+                "building" : "2222",
+                "coord" : [
+                        -73.84971759999999,
+                        40.8304811
+                ],
+                "street" : "Haviland Avenue",
+                "zipcode" : "10462"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-12-18T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2014-05-01T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 17
+                },
+                {
+                        "date" : ISODate("2013-03-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2012-09-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-02-08T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                }
+        ],
+        "name" : "The New Starling Athletic Club Of The Bronx",
+        "restaurant_id" : "40364956"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2c95"),
+        "address" : {
+                "building" : "72",
+                "coord" : [
+                        -73.92506,
+                        40.8275556
+                ],
+                "street" : "East  161 Street",
+                "zipcode" : "10451"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-04-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-11-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 4
+                },
+                {
+                        "date" : ISODate("2013-07-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-12-31T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 15
+                },
+                {
+                        "date" : ISODate("2012-05-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-01-09T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-08-15T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 37
+                }
+        ],
+        "name" : "Yankee Tavern",
+        "restaurant_id" : "40365499"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2ca7"),
+        "address" : {
+                "building" : "331",
+                "coord" : [
+                        -73.87786539999999,
+                        40.8724377
+                ],
+                "street" : "East  204 Street",
+                "zipcode" : "10467"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2014-03-26T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 23
+                },
+                {
+                        "date" : ISODate("2013-09-11T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2012-12-18T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 27
+                },
+                {
+                        "date" : ISODate("2011-10-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Mcdwyers Pub",
+        "restaurant_id" : "40365893"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2cc0"),
+        "address" : {
+                "building" : "5820",
+                "coord" : [
+                        -73.9002615,
+                        40.885186
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10463"
+        },
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-02-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2013-10-09T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                },
+                {
+                        "date" : ISODate("2013-05-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-11-20T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 18
+                },
+                {
+                        "date" : ISODate("2011-10-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2011-06-22T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 35
+                }
+        ],
+        "name" : "The Punch Bowl",
+        "restaurant_id" : "40366497"
+}
+> db.Restaurant_Data.find({"grades.score":{"$gt":90}}).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d87"),
+        "address" : {
+                "building" : "65",
+                "coord" : [
+                        -73.9782725,
+                        40.7624022
+                ],
+                "street" : "West   54 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-22T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-03-28T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 131
+                },
+                {
+                        "date" : ISODate("2013-09-25T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-04-08T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 25
+                },
+                {
+                        "date" : ISODate("2012-10-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-10-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Murals On 54/Randolphs'S",
+        "restaurant_id" : "40372466"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2e26"),
+        "address" : {
+                "building" : "345",
+                "coord" : [
+                        -73.9864626,
+                        40.7266739
+                ],
+                "street" : "East 6 Street",
+                "zipcode" : "10003"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Indian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-09-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2014-01-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-05-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-04-24T00:00:00Z"),
+                        "grade" : "P",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2012-10-01T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-04-06T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 92
+                },
+                {
+                        "date" : ISODate("2011-11-03T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 41
+                }
+        ],
+        "name" : "Gandhi",
+        "restaurant_id" : "40381295"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2f8b"),
+        "address" : {
+                "building" : "130",
+                "coord" : [
+                        -73.984758,
+                        40.7457939
+                ],
+                "street" : "Madison Avenue",
+                "zipcode" : "10016"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Pizza/Italian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-12-24T00:00:00Z"),
+                        "grade" : "Z",
+                        "score" : 31
+                },
+                {
+                        "date" : ISODate("2014-06-17T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 98
+                },
+                {
+                        "date" : ISODate("2013-12-12T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 32
+                },
+                {
+                        "date" : ISODate("2013-05-22T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 21
+                },
+                {
+                        "date" : ISODate("2012-05-02T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                }
+        ],
+        "name" : "Bella Napoli",
+        "restaurant_id" : "40393488"
+}
+> db.Restaurant_Data.find({"grades.score":{"$gt":80,"$lt":100}}).pretty()
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2d87"),
+        "address" : {
+                "building" : "65",
+                "coord" : [
+                        -73.9782725,
+                        40.7624022
+                ],
+                "street" : "West   54 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-08-22T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-03-28T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 131
+                },
+                {
+                        "date" : ISODate("2013-09-25T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2013-04-08T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 25
+                },
+                {
+                        "date" : ISODate("2012-10-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2011-10-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Murals On 54/Randolphs'S",
+        "restaurant_id" : "40372466"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2e26"),
+        "address" : {
+                "building" : "345",
+                "coord" : [
+                        -73.9864626,
+                        40.7266739
+                ],
+                "street" : "East 6 Street",
+                "zipcode" : "10003"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Indian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-09-15T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 5
+                },
+                {
+                        "date" : ISODate("2014-01-14T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-05-30T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-04-24T00:00:00Z"),
+                        "grade" : "P",
+                        "score" : 2
+                },
+                {
+                        "date" : ISODate("2012-10-01T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2012-04-06T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 92
+                },
+                {
+                        "date" : ISODate("2011-11-03T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 41
+                }
+        ],
+        "name" : "Gandhi",
+        "restaurant_id" : "40381295"
+}
+{
+        "_id" : ObjectId("5d96e12f6b51f2ede44c2f8b"),
+        "address" : {
+                "building" : "130",
+                "coord" : [
+                        -73.984758,
+                        40.7457939
+                ],
+                "street" : "Madison Avenue",
+                "zipcode" : "10016"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Pizza/Italian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-12-24T00:00:00Z"),
+                        "grade" : "Z",
+                        "score" : 31
+                },
+                {
+                        "date" : ISODate("2014-06-17T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 98
+                },
+                {
+                        "date" : ISODate("2013-12-12T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 32
+                },
+                {
+                        "date" : ISODate("2013-05-22T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 21
+                },
+                {
+                        "date" : ISODate("2012-05-02T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                }
+        ],
+        "name" : "Bella Napoli",
+        "restaurant_id" : "40393488"
+}
+{
+        "_id" : ObjectId("5d96e1306b51f2ede44c37f8"),
+        "address" : {
+                "building" : "",
+                "coord" : [
+                        -74.0163793,
+                        40.7167671
+                ],
+                "street" : "Hudson River",
+                "zipcode" : "10282"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-06-27T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 89
+                },
+                {
+                        "date" : ISODate("2013-06-06T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 6
+                },
+                {
+                        "date" : ISODate("2012-06-19T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "West 79Th Street Boat Basin Cafe",
+        "restaurant_id" : "40756344"
+}
+> db.Restaurant_Data.find({"address.coord":{"$lt":-95.754168}}).pretty()
+{
+        "_id" : ObjectId("5d96e1306b51f2ede44c3270"),
+        "address" : {
+                "building" : "3707",
+                "coord" : [
+                        -101.8945214,
+                        33.5197474
+                ],
+                "street" : "82 Street",
+                "zipcode" : "11372"
+        },
+        "borough" : "Queens",
+        "cuisine" : "American ",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-06-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2013-11-07T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 19
+                },
+                {
+                        "date" : ISODate("2013-05-17T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2012-08-29T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2012-04-03T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : ISODate("2011-11-16T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                }
+        ],
+        "name" : "Burger King",
+        "restaurant_id" : "40534067"
+}
+{
+        "_id" : ObjectId("5d96e1306b51f2ede44c35db"),
+        "address" : {
+                "building" : "15259",
+                "coord" : [
+                        -119.6368672,
+                        36.2504996
+                ],
+                "street" : "10 Avenue",
+                "zipcode" : "11357"
+        },
+        "borough" : "Queens",
+        "cuisine" : "Italian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-09-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-03-26T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 8
+                },
+                {
+                        "date" : ISODate("2013-03-04T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-09-27T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : ISODate("2012-04-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : ISODate("2011-11-23T00:00:00Z"),
+                        "grade" : "C",
+                        "score" : 34
+                }
+        ],
+        "name" : "Cascarino'S",
+        "restaurant_id" : "40668681"
+}
+{
+        "_id" : ObjectId("5d96e1306b51f2ede44c3a81"),
+        "address" : {
+                "building" : "60",
+                "coord" : [
+                        -111.9975205,
+                        42.0970258
+                ],
+                "street" : "West Side Highway",
+                "zipcode" : "10006"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Japanese",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-03-20T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 9
+                },
+                {
+                        "date" : ISODate("2013-06-28T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2012-07-05T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 13
+                },
+                {
+                        "date" : ISODate("2011-07-27T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 2
+                }
+        ],
+        "name" : "Sports Center At Chelsea Piers (Sushi Bar)",
+        "restaurant_id" : "40882356"
+}
+> db.Restaurant_Data.find({"address.coord":{"$lt":-65.754168},"cuisine":"American","grades.score":}).pretty()
+2019-10-04T12:01:32.268+0530 E  QUERY    [js] uncaught exception: SyntaxError: expected expression, got '}' :
+@(shell):1:96
+> db.Restaurant_Data.find({"address.coord":{"$lt":-65.754168},"cuisine":"American","grades.score":{"$gt":70}}).pretty()
+> db.Restaurant_Data.find({$and:[{"address.coord":{"$lt":-65.754168}},{"cuisine":"American"},{"grades.score":{"$gt":70}}
+]}).pretty()
+> db.Restaurant_Data.find({$and:[{"cuisine":"American"},{"grades.grade":"A"},{"borough":{"$nin":"Brooklyn"}}]}).pretty()
+
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$nin needs an array",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.Restaurant_Data.find({$and:[{"cuisine":"American"},{"grades.grade":"A"},{"borough":{"$nin":["Brooklyn"]}}]}).pretty
+()
+> db.Restaurant_Data.find({"name":/wil/i},{"restaurant_id":1,"name":1,"borough":1,"cuisine":1,"_id":0}).pretty()
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Delicatessen",
+        "name" : "Wilken'S Fine Food",
+        "restaurant_id" : "40356483"
+}
+{
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "name" : "Wild Asia",
+        "restaurant_id" : "40357217"
+}
+{
+        "borough" : "Bronx",
+        "cuisine" : "American ",
+        "name" : "The Williamsbridge Tavern",
+        "restaurant_id" : "40852754"
+}
+{
+        "borough" : "Bronx",
+        "cuisine" : "Pizza",
+        "name" : "Wilbel Pizza",
+        "restaurant_id" : "40871979"
+}
+> db.Restaurant_Data.find({"name":/ces$/},{"restaurant_id":1,"name":1,"borough":1,"cuisine":1,"_id":0}).pretty()
+{
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Pieces",
+        "restaurant_id" : "40399910"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "American ",
+        "name" : "S.M.R Restaurant Services",
+        "restaurant_id" : "40403857"
+}
+{
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Good Shepherd Services",
+        "restaurant_id" : "40403989"
+}
+{
+        "borough" : "Queens",
+        "cuisine" : "Ice Cream, Gelato, Yogurt, Ices",
+        "name" : "The Ice Box-Ralph'S Famous Italian Ices",
+        "restaurant_id" : "40690899"
+}
+{
+        "borough" : "Brooklyn",
+        "cuisine" : "Jewish/Kosher",
+        "name" : "Alices",
+        "restaurant_id" : "40782042"
+}
+{
+        "borough" : "Manhattan",
+        "cuisine" : "American ",
+        "name" : "Re: Sources",
+        "restaurant_id" : "40876068"
+}
+>
