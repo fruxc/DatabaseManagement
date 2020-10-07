@@ -1,6 +1,6 @@
 # Database Management System
 
-## Brief Documents
+## Brief Documents (There are files available where it was possible to create one)
 
 * DDL, DML, DCL, TCL, Constraints, and Functions
 * Select: Query, SubQuery, and Joins 
